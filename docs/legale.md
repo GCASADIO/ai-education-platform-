@@ -88,7 +88,28 @@ Si applicano nei segmenti con studenti minori; **cadono** con utenza interamente
 
 ---
 
-## 7. Tempistiche AI Act (da riverificare)
+## 7. Proprietà intellettuale e titolarità dei contenuti condivisi
+
+Con il marketplace di compiti e griglie (vedi [`backlogPrioritizzato.md`](./backlogPrioritizzato.md)) si apre un **asse di compliance nuovo, accanto a GDPR e AI Act**, che la sola app di correzione non aveva. Va affrontato **prima** di abilitare la vendita/condivisione, non a valle.
+
+I due nodi:
+
+- **Titolarità dell'opera.** Di chi è un compito che il docente carica — suo o della scuola/ateneo? In ambito lavorativo la titolarità dei materiali prodotti nell'esercizio delle proprie funzioni **non è scontata** e può spettare al datore di lavoro (istituzione). Prima di consentire la condivisione a scopo di credito/vendita serve una **verifica della titolarità**.
+- **Materiale di terzi incorporato.** I compiti includono spesso opere altrui (un brano di un romanzo per la comprensione, un'immagine, un grafico): redistribuirli tocca il **diritto d'autore di terzi**, indipendentemente da chi ha scritto la consegna.
+
+Leve di gestione:
+
+| Leva | A cosa serve |
+|---|---|
+| **Framework di licenza** esplicito al momento del caricamento | Definire cosa l'autore concede alla piattaforma e agli altri utenti |
+| **Verifica/dichiarazione di titolarità** prima di abilitare vendita o crediti | Spostare sull'autore la responsabilità dichiarativa e tracciarla |
+| **Segnalazione del materiale di terzi** e policy di rimozione | Gestire il diritto d'autore altrui e le richieste di takedown |
+
+> Nota di raccordo: la scelta dei **crediti chiusi** (non convertibili in denaro) descritta nel backlog alleggerisce anche questo asse, perché evita di configurare l'autore come venditore/impresa; ma **non** elimina il nodo della titolarità e del materiale di terzi, che resta da regolare contrattualmente.
+
+---
+
+## 8. Tempistiche AI Act (da riverificare)
 
 Quadro in movimento al momento della stesura:
 
@@ -99,7 +120,7 @@ La finestra temporale va riconfermata in fase di sviluppo, perché incide sulla 
 
 ---
 
-## 8. Checklist operativa minima
+## 9. Checklist operativa minima
 
 - [ ] Definire il segmento target e leggere la riga corrispondente della matrice (§3).
 - [ ] Stabilire la base giuridica per quel segmento.
@@ -109,11 +130,12 @@ La finestra temporale va riconfermata in fase di sviluppo, perché incide sulla 
 - [ ] Predisporre informativa e meccanismo di trasparenza.
 - [ ] Regolare contrattualmente la ripartizione provider/deployer col cliente.
 - [ ] Mappare la gestione dei dati particolari incidentali negli elaborati.
+- [ ] Se è previsto il marketplace: verificare titolarità e materiale di terzi, predisporre licenza (§7).
 - [ ] Verificare le scadenze AI Act aggiornate.
 - [ ] Ottenere parere DPO/legale prima del rilascio.
 
 ---
 
-## 9. Sintesi in una frase
+## 10. Sintesi in una frase
 
 Il peso regolatorio non dipende dall'età degli studenti ma dalla funzione "valuto e assegno un voto": l'unica leva che lo riduce davvero è il **posizionamento del sistema come assistente alla correzione, non come decisore automatico**.

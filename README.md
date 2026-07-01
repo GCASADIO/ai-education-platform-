@@ -21,11 +21,14 @@ La combinazione di certificazione psicometrica rigorosa + rubriche versionate + 
 
 Il corpus di pianificazione dettagliato si trova in [`docs/`](./docs):
 
-- [`legale.md`](./docs/legale.md) — vincoli normativi e regolatori
+- [`legale.md`](./docs/legale.md) — vincoli normativi e regolatori (GDPR, AI Act, IP marketplace)
 - [`governanceModelli.md`](./docs/governanceModelli.md) — governance dei modelli AI
-- [`backlogPrioritizzato.md`](./docs/backlogPrioritizzato.md) — backlog prodotto
+- [`backlogPrioritizzato.md`](./docs/backlogPrioritizzato.md) — backlog prodotto (MoSCoW)
+- [`roadmap.md`](./docs/roadmap.md) — sequenza di sviluppo per fasi
+- [`analisiBisogniEMercato.md`](./docs/analisiBisogniEMercato.md) — bisogni, segmento, fonti dati
 - [`ruoliEPermessi.md`](./docs/ruoliEPermessi.md) — ruoli e permessi
 - [`architetturaMotori.md`](./docs/architetturaMotori.md) — architettura multi-motore
+- [`statoDellArte.md`](./docs/statoDellArte.md) — evidenze empiriche e panorama competitivo
 
 ## Sviluppo
 

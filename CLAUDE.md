@@ -28,17 +28,20 @@ Non è "solo un correttore automatico": la differenziazione reale è la combinaz
 
 | File | Contenuto |
 |---|---|
-| `legale.md` | Vincoli normativi e regolatori (GDPR, AI Act) |
+| `legale.md` | Vincoli normativi e regolatori (GDPR, AI Act, IP/titolarità marketplace) |
 | `governanceModelli.md` | Framework di governance dei modelli AI e ricertificazione |
-| `backlogPrioritizzato.md` | Backlog di prodotto prioritizzato |
+| `backlogPrioritizzato.md` | Backlog di prodotto prioritizzato (MoSCoW) |
+| `roadmap.md` | Sequenza di sviluppo per fasi (Fase 0–5) e metodo di fasatura |
+| `analisiBisogniEMercato.md` | Esigenze docenti/studenti, scelta del segmento, fonti dati |
 | `ruoliEPermessi.md` | Ruoli, permessi, RBAC |
 | `architetturaMotori.md` (+ SVG) | Architettura multi-motore |
+| `statoDellArte.md` | Evidenze empiriche (affidabilità AI) e panorama competitivo |
 
 Claude Code deve consultare questi file prima di proporre modifiche architetturali o di prodotto che li riguardano, e mantenerli aggiornati se una decisione presa in sessione li rende obsoleti.
 
 ## Riferimenti accademici (letteratura 2023–2026 su AI grading reliability)
 
-- RULERS (arXiv 2601.08154)
+- RULERS (arXiv 2601.08654) — *identificativo da verificare contro la fonte primaria*
 - GradeAgentOps
 - arXiv 2509.19329
 - arXiv 2510.19032
