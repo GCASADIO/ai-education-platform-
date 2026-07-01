@@ -11,7 +11,7 @@
 Il prodotto non incorpora un motore fisso: ogni cliente seleziona il proprio **LLM** (*Large Language Model*, il modello linguistico che fa da motore di correzione), con possibilità di **deployment on-premise** (installazione nei server dell'istituto). Sul piano compliance questo ha un doppio effetto, già anticipato in `legale.md`:
 
 - **Risolve** in larga parte il vincolo dei trasferimenti extra-UE: con inferenza nel perimetro dell'istituto (o su modello ospitato in UE), gli elaborati non transitano verso un responsabile in paese terzo.
-- **Sposta** il problema sull'allocazione dei ruoli AI Act (provider = chi immette il sistema sul mercato; deployer = chi lo utilizza; fornitore GPAI = *General-Purpose AI*, chi fornisce il modello di IA per finalità generali), che diventa variabile per modalità di deployment (vedi §7).
+- **Sposta** il problema sull'allocazione dei ruoli AI Act (provider = chi immette il sistema sul mercato; deployer = chi lo utilizza; fornitore GPAI = *General-Purpose AI*, chi fornisce il modello di IA per finalità generali), che diventa variabile per modalità di deployment (vedi §8).
 
 Quello che la flessibilità di motore **non** tocca è la classificazione ad alto rischio — ancorata alla funzione "valuto e assegno un voto" — e introduce un problema nuovo, oggetto di questo documento: la **governance della qualità della valutazione**.
 
@@ -85,7 +85,34 @@ La certificazione non è un atto una tantum.
 
 ---
 
-## 7. Allocazione dei ruoli per modalità di deployment
+## 7. Allineamento del motore al docente
+
+Portare un motore "a corrispondere al docente" non è un'operazione sola: sotto il termine convivono **due obiettivi psicometricamente distinti**, che vanno su due leve diverse.
+
+- **Allineare la severità media** — il motore è sistematicamente più severo/indulgente del docente. È il **bias di severità (SMD)**, e per §4 è un **parametro di calibrazione**: si corregge con un offset, senza toccare il modello.
+- **Allineare l'accordo caso-per-caso** — non basta che le medie coincidano: si vuole che il motore dia voto alto *sugli stessi elaborati* del docente. È l'accordo **QWK/ICC**, e non si sposta con un offset: richiede di cambiare *come* il motore discrimina i casi.
+
+Confondere le due porta all'errore tipico: azzerare l'SMD con un offset e credere di aver "allineato", mentre l'ICC resta ferma. L'offset trasla e riscala la distribuzione, non ne cambia l'ordinamento.
+
+**Lo spettro delle leve, ordinato per quanto tocca il modello.**
+
+| Leva | Dove agisce | Cosa allinea | Genera nuova versione? |
+|---|---|---|---|
+| Rubrica eseguibile / prompt | Inferenza | Accordo caso-per-caso | No |
+| Ancore few-shot / recupero (RAG) di esempi corretti dal docente | Inferenza | Accordo caso-per-caso | No |
+| **Offset / calibrazione affine** | Post-processing | **Solo** severità media (SMD) | No |
+| Fine-tuning supervisionato (SFT), anche PEFT/LoRA per-istituto | Training | Accordo caso-per-caso | **Sì** |
+| Preference learning (RLHF / DPO) | Training | Qualità difficili da specificare (tono, priorità del feedback) | **Sì** |
+
+**Il confine che conta: inferenza ↔ training coincide col confine ricertifichi‑no ↔ ricertifichi‑sì.** Ricalibrare un offset o cambiare le ancore non crea un nuovo motore; **ogni modifica dei pesi sì** — nuovo motore, ricertificazione completa contro il gold standard (§6), senza assumere che l'allineamento raggiunto valga anche altrove.
+
+Ne segue una **tesi operativa a strati**: si sale di strato solo quando quello sotto satura. Prima rubrica + ancore (accordo) e offset (severità) in inferenza — economici, interpretabili, auditabili, senza ricertificazione. Il fine-tuning entra **solo se** l'accordo QWK/ICC col docente resta insufficiente *dopo* aver spremuto l'inferenza, *e* c'è un corpus etichettato sufficiente e pulito; LoRA per-istituto è il taglio più sensato. Il preference learning resta frontiera per il feedback qualitativo, non per il punteggio: è il regime più data-hungry, instabile e opaco all'audit — ultimo, non primo.
+
+> **Nodo aperto — da portare al team (non deciso).** Allineare a *quel singolo docente* o a un **gold standard di consenso** fra più docenti? Sono due prodotti diversi: allinearsi al singolo massimizza la sua percezione di "corregge come me" ma ottimizza l'affidabilità *rispetto a un rater*, potendone clonare i bias (alta affidabilità, validità non garantita — vedi il principio "alta affidabilità ⇏ alta validità"); allinearsi al consenso punta alla validità, ma il singolo può percepire il motore "non allineato a lui" proprio dove *lui* devia dal consenso. Decisione rinviata al confronto di team.
+
+---
+
+## 8. Allocazione dei ruoli per modalità di deployment
 
 | Modalità | Ruolo del vendor (tu) | Ruolo del cliente | Fornitore del modello | Nodo critico |
 |---|---|---|---|---|
@@ -97,7 +124,7 @@ La regola pratica: più il cliente controlla e personalizza il motore on-prem, p
 
 ---
 
-## 8. Implicazioni tecniche
+## 9. Implicazioni tecniche
 
 - **Strato di astrazione sui motori.** API, formati di input/output, limiti di token e comportamenti differiscono per famiglia: serve un'interfaccia comune che normalizzi le differenze.
 - **Tuning per motore.** La stessa rubrica/prompt rende diversamente da famiglia a famiglia. La certificazione vale per la coppia (motore, prompt): cambiare prompt invalida il profilo.
@@ -106,6 +133,6 @@ La regola pratica: più il cliente controlla e personalizza il motore on-prem, p
 
 ---
 
-## 9. Sintesi
+## 10. Sintesi
 
 La libertà di motore è un punto di forza commerciale e di compliance, ma trasferisce il rischio dalla *localizzazione del dato* alla *qualità del giudizio*. La leva di controllo non è limitare la scelta, ma **governarla**: set certificato come default con profilo tri-metrico garantito, bring-your-own come opzione esplicita a rischio del cliente, e la metodologia psicometrica (ripetibilità, validità, severità) come cancello di certificazione. È il punto in cui il lavoro di ricerca sull'affidabilità dei rater diventa direttamente il processo industriale del prodotto.

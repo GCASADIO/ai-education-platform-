@@ -73,7 +73,7 @@ Ogni motore è profilato su **tre assi indipendenti**, perché nessuno da solo b
 | **Allineamento all'umano** (validità) | quanto il voto concorda col giudizio umano di riferimento | Criterio di **ammissione** |
 | **Bias di severità** | quanto il motore è mediamente più severo o più indulgente | **Parametro di calibrazione**, non di esclusione |
 
-Il principio che orienta tutto: **il bias è correggibile, la varianza no.** Un motore mediamente severo si ricalibra applicando una correzione fissa; un motore poco ripetibile o poco valido non si recupera. E poiché non c'è miglioramento garantito tra versioni, la certificazione **non è un atto una tantum**: ogni aggiornamento la riapre, e la frequenza con cui il docente corregge a mano il voto proposto è il rilevatore precoce di deriva.
+Il principio che orienta tutto: **il bias è correggibile, la varianza no.** Un motore mediamente severo si ricalibra applicando una correzione fissa; un motore poco ripetibile o poco valido non si recupera. Vale anche per l'allineamento al singolo docente: **allineare la severità media è un offset; allineare il giudizio caso-per-caso è un'altra cosa, e costa una ricertificazione** (il confine passa tra ciò che si fa in inferenza e ciò che tocca i pesi del modello). E poiché non c'è miglioramento garantito tra versioni, la certificazione **non è un atto una tantum**: ogni aggiornamento la riapre, e la frequenza con cui il docente corregge a mano il voto proposto è il rilevatore precoce di deriva.
 
 *Le metriche psicometriche precise che misurano i tre assi sono definite nel dossier collegato.*
 
