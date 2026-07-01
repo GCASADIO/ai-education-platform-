@@ -1,0 +1,41 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Node
+node_modules/
+npm-debug.log*
+dist/
+build/
+
+# Env / secrets
+.env
+.env.local
+*.key
+*.pem
+
+# DVC (se usato per dataset/modelli)
+.dvc/cache
+.dvc/tmp
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Materiali di lavoro temporanei (chat sorgente, note di porting)
+temp/
