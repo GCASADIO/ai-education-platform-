@@ -40,5 +40,9 @@ build/
 # Materiali di lavoro temporanei (chat sorgente, note di porting)
 temp/
 
-# Audio / testi da ascoltare (non versionati)
-audio/
+# TTS: i copioni narrati (TTS/*.txt) SONO versionati.
+# Gli eventuali file audio renderizzati non lo sono.
+TTS/*.mp3
+TTS/*.wav
+TTS/*.m4a
+TTS/*.ogg

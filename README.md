@@ -38,6 +38,10 @@ La documentazione è organizzata su **due livelli**.
 - [`backlogPrioritizzato.md`](./docs/backlogPrioritizzato.md) — backlog prodotto (MoSCoW)
 - [`modelloBusiness.md`](./docs/modelloBusiness.md) — economia dei crediti, go-to-market
 
+### Copioni narrati (audio) — [`TTS/`](./TTS)
+
+La cartella [`TTS/`](./TTS) contiene i **copioni narrati** dei documenti, riscritti in forma parlata per l'ascolto (input per Text-To-Speech). Oggi presente: [`TTS/livello1-daAscoltare.txt`](./TTS/livello1-daAscoltare.txt), il racconto in nove punti della presentazione di Livello 1 (~10 min). I copioni `.txt` sono versionati; gli eventuali file audio renderizzati (`.mp3`/`.wav`) no.
+
 ## Sviluppo
 
 Questo progetto è sviluppato tramite [Claude Code](https://claude.com/claude-code). Le istruzioni di contesto persistenti per Claude Code sono in [`CLAUDE.md`](./CLAUDE.md).
