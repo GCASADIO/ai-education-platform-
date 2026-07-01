@@ -6,6 +6,10 @@
 >
 > La stella polare stabile è in [`visione.md`](./visione.md); questo documento la espande in narrazione.
 
+**Colpo d'occhio:** la mappa dei 9 punti è in [`mappaLivello1.svg`](./mappaLivello1.svg).
+
+![Mappa mentale del Livello 1](./mappaLivello1.svg)
+
 ---
 
 ## 1. Scopo
