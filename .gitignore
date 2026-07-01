@@ -39,3 +39,6 @@ build/
 
 # Materiali di lavoro temporanei (chat sorgente, note di porting)
 temp/
+
+# Audio / testi da ascoltare (non versionati)
+audio/
