@@ -91,6 +91,19 @@ Effetto collaterale: ogni elaborato di riferimento caricato è, con consenso, **
 
 ---
 
-## 6. Sintesi
+## 6. Nota — Economia dei crediti (razionale della scelta)
+
+La scelta di **crediti chiusi** (non convertibili in denaro) + **modello a due monete** è documentata in §1; qui il perché, perché regge su argomenti solidi e non sull'aneddoto.
+
+- **L'argomento debole da evitare.** "Il cashback non funziona" è falso: chi lo cita (es. Satispay) in realtà lo mantiene come leva centrale e ci ha *aggiunto* sopra un livello a punti. La lezione trasferibile non è "cashback sì/no" ma la **flessibilità di riscatto** (accumulo piacevole, spesa libera).
+- **L'argomento solido** è specifico al prodotto: una valuta chiusa evita di trasformare "il docente guadagna" in un **pagamento monetario tassabile**, alleggerendo l'asse **IP/fiscale** (vedi `legale.md` §7) — i crediti restano valore di piattaforma, non reddito.
+- **Breakage.** Il valore resta interno (reinvestito in correzioni, contenuti, accesso) e i crediti non riscattati non escono come cassa.
+- **Attenzione allo spam.** Premiare la condivisione a volume rischia di generare spam; l'antidoto proprietario è il **punteggio di qualità delle griglie** derivato dalle metriche (§Should have): una griglia che produce alta affidabilità vale più di una che genera giudizi rumorosi. È un segnale di qualità oggettivo che nessuno store generico ha.
+
+> In sintesi: crediti chiusi non perché "il cashback non funziona", ma perché alleggeriscono IP/fisco, abilitano il modello a due monete e trattengono valore (breakage) — con la qualità metrica come freno allo spam.
+
+---
+
+## 7. Sintesi
 
 La priorità mappa la sequenza di de-risking: prima il loop con un motore certificato e la sua validità, poi workflow e marketplace base, infine i differenzianti costosi (multi-motore, on-prem, adattività). La **modalità demo**, a dati sintetici e basso rischio, è un vincitore precoce: dimostra il loop e raccoglie i primi punti di gold standard. La specializzazione DSA è invece un orizzonte di ricerca, non una feature di release — ma il suo strato accessibile (design universale) è già nel breve termine.
