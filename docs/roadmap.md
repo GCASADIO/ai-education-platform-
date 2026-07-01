@@ -40,9 +40,9 @@ Corollario: le funzioni differenzianti (multi-motore, on-prem, adattività, mark
 
 | Fase | Nome | Contenuto | Metrica / criterio |
 |---|---|---|---|
-| **0** | De-risking / gold standard | Corpus a doppia correzione per **un** segmento e **una** rubrica; benchmark cross-family; profilo tri-metrico di base. Nessun prodotto ancora, solo l'harness. | Profilo (ICC, QWK, SMD) stabile su un motore |
+| **0** | De-risking / gold standard | Corpus a doppia correzione per **un** segmento e **una** rubrica; benchmark cross-family; profilo tri-metrico di base. Nessun prodotto ancora, solo l'harness. | Profilo (ICC, QWK, SMD — definizioni in [`statoDellArte.md`](./statoDellArte.md) §A.2) stabile su un motore |
 | **1** | Walking skeleton | Loop minimo end-to-end con **un** motore certificato, **un** segmento; niente on-prem né multi-motore. Pilot ristretto. | Override rate e tempo risparmiato |
-| **2** | Workflow e difendibilità | Rubrica configurabile, feedback formativo per studente, tracciabilità/informativa, integrazione LMS minima. Ancora monomotore. | Adozione nel pilot; difendibilità del voto |
+| **2** | Workflow e difendibilità | Rubrica configurabile, feedback formativo per studente, tracciabilità/informativa, integrazione LMS (piattaforma didattica) minima. Ancora monomotore. | Adozione nel pilot; difendibilità del voto |
 | **3** | Multi-motore | Strato di astrazione, set di motori certificati, profilo pubblicato. Qui arriva la value prop della scelta del motore. | ≥2 motori certificati intercambiabili |
 | **4** | On-prem / bring-your-own | Deployment locale, ricertificazione, ripartizione contrattuale dei ruoli. | Deployment on-prem funzionante + ruoli AI Act mappati |
 | **5** | Scala | Altri segmenti, altre lingue/rubriche, ciclo formativo studente (bozza → feedback → revisione). | Espansione a nuovi segmenti |

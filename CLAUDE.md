@@ -41,7 +41,7 @@ Claude Code deve consultare questi file prima di proporre modifiche architettura
 
 ## Riferimenti accademici (letteratura 2023–2026 su AI grading reliability)
 
-- RULERS (arXiv 2601.08654) — *identificativo da verificare contro la fonte primaria*
+- RULERS (arXiv 2601.08654) — *identificativo verificato su arXiv (luglio 2026)*
 - GradeAgentOps
 - arXiv 2509.19329
 - arXiv 2510.19032

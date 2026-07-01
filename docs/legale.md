@@ -2,7 +2,7 @@
 
 ### App di correzione assistita da AI per la didattica
 
-> **Natura del documento.** Sintesi di lavoro per orientare il planning di prodotto. Non è una consulenza legale. Prima del rilascio, in particolare su trattamenti che coinvolgono minori o atenei pubblici, è necessario un parere DPO/legale e una validazione delle scadenze normative, che sono in evoluzione.
+> **Natura del documento.** Sintesi di lavoro per orientare il planning di prodotto. Non è una consulenza legale. Prima del rilascio, in particolare su trattamenti che coinvolgono minori o atenei pubblici, è necessario un parere DPO (*Data Protection Officer*, responsabile della protezione dei dati) / legale e una validazione delle scadenze normative, che sono in evoluzione.
 
 ---
 
@@ -55,10 +55,10 @@ L'eccezione dell'art. 6(3) AI Act (compito meramente accessorio, nessuna profila
 - **Dati particolari incidentali** (art. 9 GDPR): un elaborato personale può rivelare salute, convinzioni religiose, opinioni politiche, orientamento sessuale. Da prevedere nel design del trattamento.
 - **Minimizzazione e conservazione**: raccogliere solo il necessario, definire tempi di cancellazione.
 - **Trasparenza**: informativa chiara; informare l'interessato che è soggetto a un sistema AI ad alto rischio.
-- **Trasferimenti extra-UE e scelta del modello**: se l'inferenza avviene su un LLM ospitato fuori UE, gli elaborati transitano verso un responsabile in paese terzo. Servono garanzie adeguate, DPA col sub-responsabile, valutazione del trasferimento. È una **scelta architetturale** (modello UE / on-prem / deployment regionale), non un adempimento a valle.
+- **Trasferimenti extra-UE e scelta del modello**: se l'inferenza avviene su un LLM (*Large Language Model*) ospitato fuori UE, gli elaborati transitano verso un responsabile in paese terzo. Servono garanzie adeguate, DPA (*Data Processing Agreement*, accordo sul trattamento dei dati) col sub-responsabile, valutazione del trasferimento. È una **scelta architetturale** (modello UE / on-prem / deployment regionale), non un adempimento a valle.
 - **AI literacy** (art. 4 AI Act): in vigore dal 2 febbraio 2025.
 - **Ripartizione provider/deployer**: se il cliente personalizza/co-costruisce il sistema, può assumersi responsabilità da provider. Da regolare contrattualmente.
-- **DPIA**: di fatto dovuta per tecnologia innovativa + valutazione automatizzata su larga scala (oltre che, dove presenti, per i minori).
+- **DPIA** (*Data Protection Impact Assessment*, valutazione d'impatto sulla protezione dei dati): di fatto dovuta per tecnologia innovativa + valutazione automatizzata su larga scala (oltre che, dove presenti, per i minori).
 
 ---
 

@@ -19,16 +19,24 @@ La combinazione di certificazione psicometrica rigorosa + rubriche versionate + 
 
 ## Documentazione
 
-Il corpus di pianificazione dettagliato si trova in [`docs/`](./docs):
+La documentazione è organizzata su **due livelli**.
 
-- [`legale.md`](./docs/legale.md) — vincoli normativi e regolatori (GDPR, AI Act, IP marketplace)
-- [`governanceModelli.md`](./docs/governanceModelli.md) — governance dei modelli AI
-- [`backlogPrioritizzato.md`](./docs/backlogPrioritizzato.md) — backlog prodotto (MoSCoW)
-- [`roadmap.md`](./docs/roadmap.md) — sequenza di sviluppo per fasi
+### Livello 1 — Presentazione (parti da qui)
+
+- **[`docs/presentazione.md`](./docs/presentazione.md)** — il racconto organico del progetto, dall'inizio alla fine in ~10 minuti. Ogni sezione rimanda al dossier di dettaglio. **È il punto d'ingresso per capire o presentare il progetto.**
+- [`docs/visione.md`](./docs/visione.md) — la stella polare a una pagina: scopo, segmento, loop fondamentale, differenziatore.
+
+### Livello 2 — Approfondimenti (dossier di dettaglio in [`docs/`](./docs))
+
 - [`analisiBisogniEMercato.md`](./docs/analisiBisogniEMercato.md) — bisogni, segmento, fonti dati
-- [`ruoliEPermessi.md`](./docs/ruoliEPermessi.md) — ruoli e permessi
-- [`architetturaMotori.md`](./docs/architetturaMotori.md) — architettura multi-motore
 - [`statoDellArte.md`](./docs/statoDellArte.md) — evidenze empiriche e panorama competitivo
+- [`governanceModelli.md`](./docs/governanceModelli.md) — certificazione e governance dei motori AI
+- [`legale.md`](./docs/legale.md) — vincoli normativi (GDPR, AI Act, IP marketplace)
+- [`architetturaMotori.md`](./docs/architetturaMotori.md) — architettura multi-motore (Strategy + Factory)
+- [`ruoliEPermessi.md`](./docs/ruoliEPermessi.md) — ruoli, permessi, separazione dei compiti
+- [`roadmap.md`](./docs/roadmap.md) — sequenza di sviluppo per fasi
+- [`backlogPrioritizzato.md`](./docs/backlogPrioritizzato.md) — backlog prodotto (MoSCoW)
+- [`modelloBusiness.md`](./docs/modelloBusiness.md) — economia dei crediti, go-to-market
 
 ## Sviluppo
 

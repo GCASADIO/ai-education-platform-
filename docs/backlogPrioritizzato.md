@@ -27,6 +27,8 @@ L'ordine non riflette il gusto ma il rischio. Le incognite maggiori — *il moto
 
 ## 3. Backlog per priorità (MoSCoW)
 
+> **MoSCoW** è un metodo di prioritizzazione: **M**ust have (indispensabile), **S**hould have (importante), **C**ould have (utile), **W**on't have (fuori ambito per ora).
+
 ### Must have — il loop minimo che dimostra tutto
 
 - Gold standard per **un** segmento e **una** rubrica (prerequisito; collo di bottiglia).
@@ -41,7 +43,7 @@ L'ordine non riflette il gusto ma il rischio. Le incognite maggiori — *il moto
 
 - Feedback formativo **multi-tratto** per studente.
 - **Design universale del feedback** (linguaggio piano, struttura a blocchi, text-to-speech, leggibilità) — accessibile a tutti, nessun dato sanitario trattato.
-- Integrazione LMS minima.
+- Integrazione LMS (*Learning Management System*, la piattaforma didattica: Registro Elettronico, Google Classroom, Moodle) minima.
 - Condivisione compiti + **crediti chiusi** (innesco del marketplace sull'utilità mono-utente).
 - Store base: catalogo, ricerca, riscatto crediti.
 - **Punteggio di qualità delle griglie** derivato dalle metriche (segnale oggettivo che nessuno store generico ha).
@@ -52,7 +54,7 @@ L'ordine non riflette il gusto ma il rischio. Le incognite maggiori — *il moto
 - **Multi-motore + bring-your-own + on-premise** con governance completa (ruoli provider/deployer, ricertificazione).
 - **Loop diagnostico → raccomandazione di materiale su misura** (lato studente adattivo). ⚠ Riapre la profilazione (GDPR, minori).
 - Modello a due monete completo e monetizzazione della vendita.
-- **Specializzazione del feedback per DSA e studenti certificati** → vedi §4.
+- **Specializzazione del feedback per DSA (Disturbi Specifici dell'Apprendimento) e studenti certificati** → vedi §4.
 
 ### Won't have (per ora) — fuori ambito
 
@@ -68,7 +70,7 @@ Obiettivo di **lungo termine**: "bello da scrivere, difficile da fare". Classifi
 Va scomposto in tre strati a priorità diversa, così il valore non aspetta la parte impossibile:
 
 1. **Design universale** — già collocato in *Should have*: feedback accessibile per tutti, senza trattare dati sanitari. È la quota di valore recuperabile presto.
-2. **Accomodamento configurato dal docente** — *Could have*: il docente, che detiene il PDP, attiva un profilo di correzione (es. escludi l'ortografia dal punteggio) e l'AI esegue. Il dato sanitario resta alla scuola; il modello non lo memorizza né lo inferisce.
+2. **Accomodamento configurato dal docente** — *Could have*: il docente, che detiene il PDP (Piano Didattico Personalizzato), attiva un profilo di correzione (es. escludi l'ortografia dal punteggio) e l'AI esegue. Il dato sanitario resta alla scuola; il modello non lo memorizza né lo inferisce.
 3. **Feedback specializzato sul profilo** — *Nice to have / ricerca*: personalizzazione validata contro il giudizio degli esperti, con gold standard proprio. La vera frontiera.
 
 Principio trasversale: **tenere la diagnosi fuori dall'AI finché possibile** — far *configurare* l'accomodamento dal docente è più sicuro e più realizzabile che farlo *inferire* al modello.

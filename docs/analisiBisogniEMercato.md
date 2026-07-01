@@ -33,7 +33,7 @@
 
 Il prodotto rende massimo dove coincidono **tre condizioni**: alto volume di correzione descrittiva, rubriche ben definite, coerenza che conta.
 
-- Il segmento che le soddisfa meglio tutte e tre è la **valutazione della scrittura in lingua (L2 / certificazioni)**: rubriche mature e standardizzate (QCER, descrittori per banda), e caso in cui la repeatability è più facilmente difendibile.
+- Il segmento che le soddisfa meglio tutte e tre è la **valutazione della scrittura in lingua (L2 — *lingua seconda*, cioè straniera — e certificazioni)**: rubriche mature e standardizzate (QCER — *Quadro Comune Europeo di Riferimento per le lingue* —, con descrittori per banda), e caso in cui la ripetibilità è più facilmente difendibile.
 - Subito dopo: **discipline umanistiche/giuridiche** con esami a risposta aperta in corsi ad alto numero di iscritti.
 
 > Attenzione: **il volume non è il dolore.** Un segmento grande con poca correzione descrittiva vale meno di uno piccolo che vive di temi. Il dato di volume va ponderato per "quanta valutazione aperta" produce quel segmento.
@@ -50,9 +50,9 @@ Servono **tre tipi di dato per tre decisioni diverse**. Il rischio è sovra-inve
 
 Dimensionamento quantitativo (facile da reperire in Italia):
 
-- **ISTAT** (sezione istruzione) e **portale dati aperti del MIM** — studenti, docenti, scuole per ordine e indirizzo;
-- **MUR / ANVUR** — iscritti universitari per area disciplinare;
-- **report annuali degli enti di certificazione linguistica** (Cambridge, IELTS/British Council, Goethe, Instituto Cervantes, e CILS/CLIQ per l'italiano L2) — volumi di candidati;
+- **ISTAT** (Istituto Nazionale di Statistica, sezione istruzione) e **portale dati aperti del MIM** (Ministero dell'Istruzione e del Merito) — studenti, docenti, scuole per ordine e indirizzo;
+- **MUR** (Ministero dell'Università e della Ricerca) **/ ANVUR** (Agenzia Nazionale di Valutazione del sistema Universitario e della Ricerca) — iscritti universitari per area disciplinare;
+- **report annuali degli enti di certificazione linguistica** (Cambridge, IELTS/British Council, Goethe, Instituto Cervantes, e CILS/CLIQ per l'italiano come lingua straniera) — volumi di candidati;
 - **Eurostat** — confronto europeo.
 
 Dato qualitativo sul bisogno (quello che quasi nessuno raccoglie, e che conta di più):

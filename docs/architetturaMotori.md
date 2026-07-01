@@ -29,7 +29,7 @@ La demo non richiede infrastruttura nuova: il `FakeEngine` è semplicemente un'i
 
 L'Abstract Factory serve a creare *famiglie di oggetti correlati che variano insieme* e devono restare coerenti (il classico esempio è il toolkit UI che produce Button + Checkbox + Scrollbar abbinati a un tema). Qui c'è **un solo tipo di prodotto** — il motore — con più varianti: è il caso della Factory semplice.
 
-Diventa giustificata **solo se** ogni motore si porta dietro una famiglia di collaboratori che devono combaciare — per esempio un `PromptAdapter` + un `ResponseParser` + un tokenizer specifici per famiglia. Dato che in `governanceModelli.md` è annotato il *tuning di prompt e formato per motore*, è uno scenario che potrebbe emergere. La regola: partire da **Strategy + Factory semplice**, promuovere ad Abstract Factory se e quando quei collaboratori diventano una famiglia coerente. Non prima (YAGNI).
+Diventa giustificata **solo se** ogni motore si porta dietro una famiglia di collaboratori che devono combaciare — per esempio un `PromptAdapter` + un `ResponseParser` + un tokenizer specifici per famiglia. Dato che in `governanceModelli.md` è annotato il *tuning di prompt e formato per motore*, è uno scenario che potrebbe emergere. La regola: partire da **Strategy + Factory semplice**, promuovere ad Abstract Factory se e quando quei collaboratori diventano una famiglia coerente. Non prima (YAGNI — *You Aren't Gonna Need It*: non costruire in anticipo ciò che non serve ancora).
 
 ---
 

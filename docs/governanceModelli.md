@@ -8,10 +8,10 @@
 
 ## 1. La decisione di design
 
-Il prodotto non incorpora un motore fisso: ogni cliente seleziona il proprio LLM, con possibilità di **deployment on-premise**. Sul piano compliance questo ha un doppio effetto, già anticipato in `legale.md`:
+Il prodotto non incorpora un motore fisso: ogni cliente seleziona il proprio **LLM** (*Large Language Model*, il modello linguistico che fa da motore di correzione), con possibilità di **deployment on-premise** (installazione nei server dell'istituto). Sul piano compliance questo ha un doppio effetto, già anticipato in `legale.md`:
 
 - **Risolve** in larga parte il vincolo dei trasferimenti extra-UE: con inferenza nel perimetro dell'istituto (o su modello ospitato in UE), gli elaborati non transitano verso un responsabile in paese terzo.
-- **Sposta** il problema sull'allocazione dei ruoli AI Act (provider / deployer / fornitore GPAI), che diventa variabile per modalità di deployment (vedi §7).
+- **Sposta** il problema sull'allocazione dei ruoli AI Act (provider = chi immette il sistema sul mercato; deployer = chi lo utilizza; fornitore GPAI = *General-Purpose AI*, chi fornisce il modello di IA per finalità generali), che diventa variabile per modalità di deployment (vedi §7).
 
 Quello che la flessibilità di motore **non** tocca è la classificazione ad alto rischio — ancorata alla funzione "valuto e assegno un voto" — e introduce un problema nuovo, oggetto di questo documento: la **governance della qualità della valutazione**.
 
@@ -22,7 +22,7 @@ Quello che la flessibilità di motore **non** tocca è la classificazione ad alt
 La libertà di motore introduce una tensione strutturale tra protezione del dato e qualità del giudizio.
 
 - I modelli che meglio proteggono la privacy sono quelli **piccoli, locali, self-hosted** su hardware modesto.
-- Sono però anche quelli che **valutano peggio**: i modelli chiusi (GPT, Claude) si collocano su auto-consistenza ICC ~0.94–0.99 con buon allineamento all'umano, mentre gli open-source tendono a restare sotto su *entrambi* gli assi.
+- Sono però anche quelli che **valutano peggio**: i modelli chiusi (GPT, Claude) si collocano su auto-consistenza ICC (*Intraclass Correlation Coefficient*, coefficiente di correlazione intraclasse) ~0.94–0.99 con buon allineamento all'umano, mentre gli open-source tendono a restare sotto su *entrambi* gli assi.
 
 Il caso peggiore — un open-source piccolo on-prem — è esattamente quello che un cliente sceglie *per* stare on-prem. La conseguenza: la libertà di motore va **governata**, non lasciata libera, altrimenti il prodotto eredita la responsabilità reputazionale e contrattuale di giudizi prodotti da motori non idonei.
 
@@ -43,8 +43,8 @@ Qui la metodologia psicometrica diventa il processo industriale di certificazion
 | Asse | Metrica | Cosa misura | Cosa NON cattura |
 |---|---|---|---|
 | **Ripetibilità** (auto-consistenza) | ICC test-retest a temperatura fissa | Stabilità del motore su rivalutazioni dello stesso elaborato | L'accuratezza: un motore può essere stabilmente sbagliato |
-| **Allineamento all'umano** (validità) | QWK / ICC vs gold standard esperto | Accordo punto-per-punto con il giudizio umano di riferimento | Il livello assoluto: l'accordo di rango non esclude bias sistematici |
-| **Bias di severità** | SMD (adimensionale, analogo a Cohen's *d*) | Scostamento medio di severità rispetto al riferimento | L'accordo punto-per-punto: due rater possono avere SMD ≈ 0 e QWK basso |
+| **Allineamento all'umano** (validità) | QWK (*Quadratic Weighted Kappa*) / ICC vs gold standard esperto | Accordo punto-per-punto con il giudizio umano di riferimento | Il livello assoluto: l'accordo di rango non esclude bias sistematici |
+| **Bias di severità** | SMD (*Standardized Mean Difference*, adimensionale, analogo a Cohen's *d*) | Scostamento medio di severità rispetto al riferimento | L'accordo punto-per-punto: due rater possono avere SMD ≈ 0 e QWK basso |
 
 **Riferimenti operativi.**
 

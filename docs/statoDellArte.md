@@ -19,6 +19,8 @@ La letteratura educativa documenta soprattutto la seconda; l'intra-rater "puro" 
 
 ### A.2 Numeri-ancora
 
+> **Le tre metriche in breve** (ricorrono in tutti i documenti). **ICC** — *Intraclass Correlation Coefficient*, coefficiente di correlazione intraclasse: quanto concordano misurazioni ripetute dello stesso oggetto. **QWK** — *Quadratic Weighted Kappa*, kappa pesato quadraticamente: accordo tra due valutatori su una scala ordinale, con penalità crescente per i disaccordi più ampi. **SMD** — *Standardized Mean Difference*, differenza media standardizzata: di quanto due valutatori differiscono *in media*, espresso in deviazioni standard (analogo alla *d* di Cohen).
+
 | Dimensione | Valore | Fonte (da verificare) | Confidenza |
 |---|---|---|---|
 | Umano intra-rater (correttori addestrati con rubrica) | ICC ~0.70–0.85, con drift nella sessione | ricerca psicometrica / generalizability theory | media |
@@ -72,7 +74,7 @@ La correzione HITL e l'allenamento studente sono terreno affollato: **non** sono
 
 Elenco degli identificativi emersi nelle ricerche. **Da verificare** (alcuni sono futuri rispetto al momento della ricognizione).
 
-- **RULERS** — arXiv 2601.08654 *(⚠️ valore allineato tra i documenti a partire dalla chat sorgente; l'identificativo resta da verificare contro arXiv — in una precedente stesura di CLAUDE.md figurava 2601.08154)*
+- **RULERS** — arXiv 2601.08654 *(✓ identificativo verificato su arXiv, luglio 2026: "Locked Rubrics and Evidence-Anchored Scoring for Robust LLM Evaluation", codice: github.com/LabRAI/Rulers)*
 - **GradeAgentOps** — doi.org/10.3390/ai7060198
 - arXiv 2509.19329 — test–retest ICC tra modelli/temperature/prompt (ICC inter-modello 0.77–0.91 large vs 0.60–0.81 small)
 - arXiv 2510.19032 — ICC + bias come differenza media segnata normalizzata

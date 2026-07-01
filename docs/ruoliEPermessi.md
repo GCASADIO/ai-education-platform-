@@ -40,8 +40,8 @@ I permessi di un ruolo valgono solo entro il proprio scope e in quelli annidati 
 | **Coordinatore didattico** | materia / dipartimento | Gestire le **griglie condivise** di materia; vedere le **metriche di coerenza** e i pattern di override in forma aggregata | Modificare i singoli voti |
 | **Gestione classi** (segreteria) | organizzazione | Creare classi; iscrivere studenti; assegnare docenti alle classi | Vedere o correggere elaborati |
 | **Admin configurazione** | organizzazione | Gestire i template di griglia; definire la **policy sul motore** certificato; gestire utenti e ruoli | Modificare i voti validati |
-| **Admin tecnico / IT** | sistema / tenant | Deployment; connessione e aggiornamento del motore; SSO; integrazioni (LMS) | Vedere il **contenuto** degli elaborati |
-| **Audit / Compliance (DPO)** | organizzazione | Leggere l'audit trail e i registri di trattamento; gestire le richieste degli interessati (accesso, cancellazione) | Modificare voti, griglie o configurazioni |
+| **Admin tecnico / IT** | sistema / tenant | Deployment; connessione e aggiornamento del motore; SSO (*Single Sign-On*, accesso unificato); integrazioni con l'LMS (*Learning Management System*, la piattaforma didattica: Registro Elettronico, Google Classroom, Moodle) | Vedere il **contenuto** degli elaborati |
+| **Audit / Compliance (DPO)** — *Data Protection Officer*, responsabile della protezione dei dati | organizzazione | Leggere l'audit trail e i registri di trattamento; gestire le richieste degli interessati (accesso, cancellazione) | Modificare voti, griglie o configurazioni |
 
 ---
 
