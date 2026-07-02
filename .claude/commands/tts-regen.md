@@ -31,17 +31,16 @@ Passi:
    - Se il documento contiene un'immagine/diagramma o tabelle, descrivine a parole la logica e avvisa
      che la parte visiva non è ascoltabile.
 
-4. Per **ciascun** copione rigenerato, scrivi un file di changelog in
-   `TTS/changelog/<AAAA-MM-GG>-<doc>.md` (data odierna, `<doc>` = nome del documento senza
-   suffisso `-daAscoltare`). Contenuto, breve e concreto:
+4. Scrivi (o, se esiste già per oggi, aggiorna aggiungendo una sezione) un **unico** file di
+   changelog in `TTS/changelog/<AAAA-MM-GG>.md` (data odierna), con una sezione per ciascun
+   copione rigenerato in questa sessione (intestazione `## <doc>`). Per ogni sezione, breve e
+   concreta:
    - cosa è cambiato nel documento sorgente rispetto alla versione precedente (in base al diff
      `git diff` sul file `docs/<doc>.md`, se disponibile; altrimenti descrivi lo stato attuale
      rilevante);
    - come si riflette la modifica nel copione riscritto (nuove sezioni narrate, parti rimosse,
      cambi di enfasi);
    - non ripetere tutto il contenuto del copione: solo la differenza.
-   Se più copioni vengono rigenerati nella stessa sessione, crea un file di changelog separato
-   per ciascuno (stesso nome, `<doc>` diverso).
 
 5. Ri-sincronizza il manifest, tramite lo strumento Bash:
    - se hai rigenerato **tutti** i disallineati: `powershell -ExecutionPolicy Bypass -File TTS/tts-regen.ps1 -Stamp`
