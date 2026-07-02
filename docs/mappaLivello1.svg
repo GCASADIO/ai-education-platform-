@@ -2,11 +2,11 @@
   <rect x="0" y="0" width="1300" height="900" fill="#f8fafc"/>
 
   <!-- Title -->
-  <text x="40" y="52" font-size="26" font-weight="700" fill="#0f172a">AI in Education — Mappa del Livello 1</text>
-  <text x="40" y="78" font-size="14" fill="#64748b">Il racconto in 9 punti · dettaglio in docs/presentazione.md</text>
+  <text x="40" y="52" font-size="30" font-weight="700" fill="#0f172a">AI in Education — Mappa del Livello 1</text>
+  <text x="40" y="80" font-size="15" fill="#64748b">Narrazione completa in docs/presentazione.md</text>
 
   <!-- Legend -->
-  <g font-size="13" fill="#334155">
+  <g font-size="14" fill="#334155">
     <rect x="40" y="100" width="14" height="14" rx="3" fill="#7c3aed"/><text x="62" y="112">Visione</text>
     <rect x="140" y="100" width="14" height="14" rx="3" fill="#2563eb"/><text x="162" y="112">Mercato &amp; posizionamento</text>
     <rect x="360" y="100" width="14" height="14" rx="3" fill="#059669"/><text x="382" y="112">Prodotto &amp; tecnica</text>
@@ -28,80 +28,91 @@
 
   <!-- Central node -->
   <rect x="520" y="425" width="260" height="90" rx="16" fill="#1e293b"/>
-  <text x="650" y="462" text-anchor="middle" font-size="20" font-weight="700" fill="#ffffff">AI in Education</text>
-  <text x="650" y="488" text-anchor="middle" font-size="13" fill="#cbd5e1">Correzione AI certificata,</text>
-  <text x="650" y="505" text-anchor="middle" font-size="13" fill="#cbd5e1">human-in-the-loop</text>
+  <text x="650" y="462" text-anchor="middle" font-size="23" font-weight="700" fill="#ffffff">AI in Education</text>
+  <text x="650" y="488" text-anchor="middle" font-size="14" fill="#cbd5e1">Correzione AI certificata,</text>
+  <text x="650" y="505" text-anchor="middle" font-size="14" fill="#cbd5e1">human-in-the-loop</text>
 
   <!-- Node style helper via groups -->
   <!-- 1 Scopo (viola) -->
   <g>
-    <rect x="525" y="120" width="250" height="80" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
-    <text x="650" y="150" text-anchor="middle" font-size="15" font-weight="700" fill="#5b21b6">1 · Scopo</text>
-    <text x="650" y="170" text-anchor="middle" font-size="12.5" fill="#4c1d95">Alleggerire la correzione descrittiva</text>
-    <text x="650" y="187" text-anchor="middle" font-size="12.5" fill="#4c1d95">senza delegare il giudizio</text>
+    <rect x="525" y="120" width="250" height="100" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="650" y="150" text-anchor="middle" font-size="17" font-weight="700" fill="#5b21b6">1 · Scopo</text>
+    <text x="650" y="170" text-anchor="middle" font-size="13.5" fill="#4c1d95">Alleggerire la correzione descrittiva</text>
+    <text x="650" y="187" text-anchor="middle" font-size="13.5" fill="#4c1d95">senza delegare il giudizio</text>
+    <text x="650" y="211" text-anchor="middle" font-size="13" font-weight="600" font-style="italic" fill="#334155">↳ visione.md</text>
   </g>
 
   <!-- 2 Il problema (blu) -->
   <g>
-    <rect x="859" y="193" width="250" height="80" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
-    <text x="984" y="223" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">2 · Il problema</text>
-    <text x="984" y="243" text-anchor="middle" font-size="12.5" fill="#1e3a8a">Tempo e coerenza:</text>
-    <text x="984" y="260" text-anchor="middle" font-size="12.5" fill="#1e3a8a">dove il dolore è massimo</text>
+    <rect x="859" y="193" width="250" height="100" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="984" y="223" text-anchor="middle" font-size="17" font-weight="700" fill="#1e40af">2 · Il problema</text>
+    <text x="984" y="243" text-anchor="middle" font-size="13.5" fill="#1e3a8a">Tempo e coerenza:</text>
+    <text x="984" y="260" text-anchor="middle" font-size="13.5" fill="#1e3a8a">dove il dolore è massimo</text>
+    <text x="984" y="284" text-anchor="middle" font-size="13" font-weight="600" font-style="italic" fill="#334155">↳ analisiBisogniEMercato.md</text>
   </g>
 
   <!-- 3 Le evidenze (blu) -->
   <g>
-    <rect x="1037" y="376" width="250" height="80" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
-    <text x="1162" y="406" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">3 · Le evidenze</text>
-    <text x="1162" y="426" text-anchor="middle" font-size="12.5" fill="#1e3a8a">Ripetibile ≠ giusto;</text>
-    <text x="1162" y="443" text-anchor="middle" font-size="12.5" fill="#1e3a8a">ogni versione va ri-testata</text>
+    <rect x="1037" y="376" width="250" height="100" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="1162" y="406" text-anchor="middle" font-size="17" font-weight="700" fill="#1e40af">3 · Le evidenze</text>
+    <text x="1162" y="426" text-anchor="middle" font-size="13.5" fill="#1e3a8a">Ripetibile ≠ giusto;</text>
+    <text x="1162" y="443" text-anchor="middle" font-size="13.5" fill="#1e3a8a">ogni versione va ri-testata</text>
+    <text x="1162" y="466" text-anchor="middle" font-size="13" font-weight="600" font-style="italic" fill="#334155">↳ statoDellArte.md</text>
   </g>
 
   <!-- 4 Il fossato (blu) -->
   <g>
-    <rect x="975" y="585" width="250" height="80" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
-    <text x="1100" y="615" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">4 · Il fossato</text>
-    <text x="1100" y="635" text-anchor="middle" font-size="12.5" fill="#1e3a8a">Nessun competitor unisce</text>
-    <text x="1100" y="652" text-anchor="middle" font-size="12.5" fill="#1e3a8a">tutti gli strati</text>
+    <rect x="975" y="585" width="250" height="100" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="1100" y="615" text-anchor="middle" font-size="17" font-weight="700" fill="#1e40af">4 · Il fossato</text>
+    <text x="1100" y="635" text-anchor="middle" font-size="13.5" fill="#1e3a8a">Nessun competitor unisce</text>
+    <text x="1100" y="652" text-anchor="middle" font-size="13.5" fill="#1e3a8a">tutti gli strati</text>
+    <text x="1100" y="675" text-anchor="middle" font-size="13" font-weight="600" font-style="italic" fill="#334155">↳ statoDellArte.md · Parte B</text>
   </g>
 
   <!-- 5 Certificazione (verde) -->
   <g>
-    <rect x="703" y="721" width="250" height="80" rx="12" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
-    <text x="828" y="751" text-anchor="middle" font-size="15" font-weight="700" fill="#065f46">5 · Certificazione</text>
-    <text x="828" y="771" text-anchor="middle" font-size="12.5" fill="#064e3b">Il motore è uno strumento</text>
-    <text x="828" y="788" text-anchor="middle" font-size="12.5" fill="#064e3b">di misura da collaudare</text>
+    <rect x="703" y="721" width="250" height="100" rx="12" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+    <text x="828" y="751" text-anchor="middle" font-size="17" font-weight="700" fill="#065f46">5 · Certificazione</text>
+    <text x="828" y="771" text-anchor="middle" font-size="13.5" fill="#064e3b">Il motore è uno strumento</text>
+    <text x="828" y="788" text-anchor="middle" font-size="13.5" fill="#064e3b">di misura da collaudare</text>
+    <text x="828" y="812" text-anchor="middle" font-size="13" font-weight="600" font-style="italic" fill="#334155">↳ governanceModelli.md</text>
   </g>
 
   <!-- 6 Compliance (verde) -->
   <g>
-    <rect x="347" y="721" width="250" height="80" rx="12" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
-    <text x="472" y="751" text-anchor="middle" font-size="15" font-weight="700" fill="#065f46">6 · Compliance EU</text>
-    <text x="472" y="771" text-anchor="middle" font-size="12.5" fill="#064e3b">La macchina propone,</text>
-    <text x="472" y="788" text-anchor="middle" font-size="12.5" fill="#064e3b">il docente decide</text>
+    <rect x="347" y="721" width="250" height="100" rx="12" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+    <text x="472" y="751" text-anchor="middle" font-size="17" font-weight="700" fill="#065f46">6 · Compliance EU</text>
+    <text x="472" y="771" text-anchor="middle" font-size="13.5" fill="#064e3b">La macchina propone,</text>
+    <text x="472" y="788" text-anchor="middle" font-size="13.5" fill="#064e3b">il docente decide</text>
+    <text x="472" y="812" text-anchor="middle" font-size="13" font-weight="600" font-style="italic" fill="#334155">↳ legale.md</text>
   </g>
 
   <!-- 7 Architettura e ruoli (verde) -->
   <g>
-    <rect x="75" y="585" width="250" height="80" rx="12" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
-    <text x="200" y="615" text-anchor="middle" font-size="15" font-weight="700" fill="#065f46">7 · Architettura e ruoli</text>
-    <text x="200" y="635" text-anchor="middle" font-size="12.5" fill="#064e3b">Motori intercambiabili +</text>
-    <text x="200" y="652" text-anchor="middle" font-size="12.5" fill="#064e3b">separazione dei compiti</text>
+    <rect x="75" y="585" width="250" height="116" rx="12" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+    <text x="200" y="615" text-anchor="middle" font-size="17" font-weight="700" fill="#065f46">7 · Architettura e ruoli</text>
+    <text x="200" y="635" text-anchor="middle" font-size="13.5" fill="#064e3b">Motori intercambiabili +</text>
+    <text x="200" y="652" text-anchor="middle" font-size="13.5" fill="#064e3b">separazione dei compiti</text>
+    <text x="200" y="674" text-anchor="middle" font-size="13" font-weight="600" font-style="italic" fill="#334155">↳ architetturaMotori.md</text>
+    <text x="200" y="692" text-anchor="middle" font-size="13" font-weight="600" font-style="italic" fill="#334155">↳ ruoliEPermessi.md</text>
   </g>
 
   <!-- 8 Roadmap (arancio) -->
   <g>
-    <rect x="13" y="376" width="250" height="80" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
-    <text x="138" y="406" text-anchor="middle" font-size="15" font-weight="700" fill="#9a3412">8 · Cosa e in che ordine</text>
-    <text x="138" y="426" text-anchor="middle" font-size="12.5" fill="#7c2d12">Fette verticali,</text>
-    <text x="138" y="443" text-anchor="middle" font-size="12.5" fill="#7c2d12">per rischio decrescente</text>
+    <rect x="13" y="376" width="250" height="116" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <text x="138" y="406" text-anchor="middle" font-size="17" font-weight="700" fill="#9a3412">8 · Cosa e in che ordine</text>
+    <text x="138" y="426" text-anchor="middle" font-size="13.5" fill="#7c2d12">Fette verticali,</text>
+    <text x="138" y="443" text-anchor="middle" font-size="13.5" fill="#7c2d12">per rischio decrescente</text>
+    <text x="138" y="465" text-anchor="middle" font-size="13" font-weight="600" font-style="italic" fill="#334155">↳ roadmap.md</text>
+    <text x="138" y="483" text-anchor="middle" font-size="13" font-weight="600" font-style="italic" fill="#334155">↳ backlogPrioritizzato.md</text>
   </g>
 
   <!-- 9 Modello di business (arancio) -->
   <g>
-    <rect x="191" y="193" width="250" height="80" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
-    <text x="316" y="223" text-anchor="middle" font-size="15" font-weight="700" fill="#9a3412">9 · Modello di business</text>
-    <text x="316" y="243" text-anchor="middle" font-size="12.5" fill="#7c2d12">Si vende la certificabilità,</text>
-    <text x="316" y="260" text-anchor="middle" font-size="12.5" fill="#7c2d12">non la correzione</text>
+    <rect x="191" y="193" width="250" height="100" rx="12" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <text x="316" y="223" text-anchor="middle" font-size="17" font-weight="700" fill="#9a3412">9 · Modello di business</text>
+    <text x="316" y="243" text-anchor="middle" font-size="13.5" fill="#7c2d12">Si vende la certificabilità,</text>
+    <text x="316" y="260" text-anchor="middle" font-size="13.5" fill="#7c2d12">non la correzione</text>
+    <text x="316" y="283" text-anchor="middle" font-size="13" font-weight="600" font-style="italic" fill="#334155">↳ modelloBusiness.md</text>
   </g>
 </svg>
