@@ -55,6 +55,15 @@ La compliance non è solo un costo: in vendita istituzionale la **difendibilità
 
 ---
 
+## 5-bis. Il motore locale come leva commerciale — ambiti preclusi e hosting gestito
+
+Due argomenti di vendita che nascono dalla scelta multi-motore + on-prem, non dalla correzione in sé:
+
+- **Ambiti preclusi al frontier ospitato.** I modelli frontier via API applicano policy di rifiuto: alcuni domini didattici legittimi — cybersecurity offensiva, red-team, scrittura di exploit a scopo formativo — vi sbattono contro. Un motore **locale** li copre, e apre un mercato che i prodotti costruiti solo su frontier ospitato **non possono** servire. Attenzione a *come* si vende: *"apre ambiti che il frontier nega"* è vero e difendibile; *"corregge bene quegli ambiti"* è un'altra affermazione, che richiede comunque la **certificazione per-ambito** ([`governanceModelli.md`](./governanceModelli.md) §3) — capacità ≠ validità. E l'apertura di quegli ambiti **sposta la responsabilità sul cliente** ([`legale.md`](./legale.md) §4): va prezzata e contrattualizzata, non regalata.
+- **Hosting gestito come tier intermedio.** Tra il cloud a motore certificato e il bring-your-own puro c'è un terzo prodotto: **ospitiamo e operiamo noi il modello del cliente**. Il cliente ottiene motore specializzato e/o sovranità del dato; noi conserviamo il controllo delle modifiche (le eseguiamo noi, o sappiamo cosa è cambiato) e quindi la **garanzia di qualità** che il bring-your-own non può dare ([`governanceModelli.md`](./governanceModelli.md) §5). È monetizzabile come **servizio gestito ricorrente**, coerente con la stickiness della vendita istituzionale (§4).
+
+---
+
 ## 6. Sintesi
 
 Si monetizza la certificabilità del motore, non la correzione. I crediti chiusi + due monete alleggeriscono IP/fisco e trattengono valore, con il quality score metrico come freno allo spam. Il go-to-market corre su due binari — docente singolo per l'innesco, istituzione per la ricorrenza — e la compliance EU-native è un argomento di vendita, non solo un adempimento.

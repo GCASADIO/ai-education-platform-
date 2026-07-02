@@ -30,9 +30,11 @@ Il caso peggiore — un open-source piccolo on-prem — è esattamente quello ch
 
 ## 3. Principio guida
 
-Non si certifica "l'app corregge bene" in astratto. Si certifica **"il motore X, con questa rubrica, corregge con questo profilo di affidabilità e validità"**. La qualità è una proprietà della coppia (motore, configurazione), non dell'applicazione.
+Non si certifica "l'app corregge bene" in astratto. Si certifica **"il motore X, con questa rubrica, **sull'ambito Z**, corregge con questo profilo di affidabilità e validità"**. La qualità è una proprietà della **terna (motore, configurazione, ambito/dominio)**, non dell'applicazione.
 
-Da qui discende un'architettura a livelli (§5): un insieme di **motori certificati** con metriche garantite, e sotto un'opzione **bring-your-own** esplicitamente a rischio del cliente.
+**L'ambito è una coordinata, non un dettaglio.** Un motore — specie se locale e *distillato* (compresso da un modello più grande, quindi potenzialmente competente solo su alcuni domini) — può superare la certificazione su un ambito (es. produzione tecnica di cybersecurity) e fallirla su un altro (es. analisi letteraria). La certificazione non è quindi mai *"il motore è certificato"* in assoluto, ma *"certificato **per l'ambito Z**"*, con **badge di validità per-ambito** che dichiarano esplicitamente il confine invece di lasciar presumere generalità. È lo stesso principio già valido per la migrazione di versione (§7, *"senza assumere che l'allineamento raggiunto valga anche altrove"*), esteso al dominio: **capacità in un ambito ⇏ validità in un altro**, esattamente come alta affidabilità ⇏ validità. Un motore verticale certificato solo su alcuni ambiti è pienamente coerente con questa filosofia, non un'eccezione.
+
+Da qui discende un'architettura a livelli (§5): un insieme di **motori certificati** con metriche garantite, un livello intermedio di **hosting gestito** del modello del cliente, e sotto un'opzione **bring-your-own** esplicitamente a rischio del cliente.
 
 ---
 
@@ -70,10 +72,13 @@ Ne segue una gerarchia chiara dei criteri:
 
 | Livello | Cosa offre | Garanzia | Per chi |
 |---|---|---|---|
-| **Motori certificati** | Profilo tri-metrico pubblicato, ricalibrazione severità applicata | Metriche di affidabilità/validità garantite contrattualmente | Default, clienti istituzionali |
+| **Motori certificati** | Profilo tri-metrico per-ambito pubblicato, ricalibrazione severità applicata | Metriche di affidabilità/validità garantite contrattualmente | Default, clienti istituzionali |
+| **Hosting gestito del modello del cliente** | Il modello del cliente (anche verticale/distillato) è ospitato e operato da noi | Profilo per-ambito **+ controllo delle modifiche**: le variazioni di pesi le eseguiamo noi o sono comunque tracciate | Chi vuole un motore specializzato o sovranità del dato senza perdere la garanzia di qualità |
 | **Bring-your-own** | Il cliente collega qualsiasi motore (tipicamente on-prem) | Nessuna garanzia sulle metriche; segnalazione esplicita del rischio | Clienti con vincoli di sovranità del dato che accettano il trade-off |
 
 La segnalazione esplicita non è solo prudenza commerciale: in regime di alto rischio, sapere *quale* motore ha prodotto un giudizio e con quale profilo di qualità è parte della tracciabilità e della difendibilità del voto.
+
+**Perché l'hosting gestito è una leva di governance, non solo di infrastruttura.** Ogni modifica dei pesi da parte del cliente invalida il profilo di certificazione (§6–7): un motore ri-addestrato o fine-tunato dall'istituto è, ai fini della qualità, un motore **nuovo e non certificato**. Ospitare noi il modello del cliente chiude questo buco in due modi — **o le modifiche le eseguiamo noi**, restando dentro il ciclo di ricertificazione, **o almeno sappiamo esattamente cosa il cliente ha cambiato**, potendo attestare (o negare) la validità del profilo dopo l'intervento. È il gradino intermedio tra il set certificato (controllo pieno, motore nostro) e il bring-your-own (nessun controllo, nessuna garanzia): dà al cliente il motore che vuole senza cedere la tracciabilità che regge la difendibilità del voto.
 
 ---
 
@@ -122,6 +127,7 @@ Ne segue una **tesi operativa a strati**: si sale di strato solo quando quello s
 |---|---|---|---|---|
 | **Cloud, API motore certificato (UE)** | Provider del sistema ad alto rischio | Deployer | Fornitore GPAI | Documentazione GPAI per comporre il sistema |
 | **Open-source on-premise** | Provider del software; il modello lo porta il cliente | Deployer, ma vicino al ruolo di provider se personalizza | — (modello self-hosted) | Documentazione spesso scarna; rischio scivolamento di ruolo |
+| **Hosting gestito (modello del cliente presso di noi)** | Provider del software **e operatore del modello**; se eseguiamo noi le modifiche ci avviciniamo al ruolo di provider anche sul modello | Deployer: conserva la scelta del motore ma delega esecuzione e controllo delle modifiche | Cliente (self-hosted, ma operato da noi) | Chi risponde delle modifiche ai pesi: fissare contrattualmente chi le esegue e chi le autorizza |
 | **Hybrid (orchestrazione tua, inferenza on-prem)** | Provider | Deployer | Misto | Ripartizione contrattuale fine delle responsabilità |
 
 La regola pratica: più il cliente controlla e personalizza il motore on-prem, più si avvicina al ruolo di provider AI Act — con i relativi obblighi. Va regolato contrattualmente in ciascuna modalità.
