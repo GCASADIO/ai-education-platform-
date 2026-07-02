@@ -30,6 +30,8 @@ Entrambi convergono sullo stesso requisito di design: **la macchina propone, il 
 
 L'eccezione dell'art. 6(3) AI Act (compito meramente accessorio, nessuna profilazione) **non copre** l'assegnazione del voto; potrebbe valere solo per usi marginali (es. controllo ex post di scostamento del docente da un modello).
 
+> **Nota di raccordo — il rischio è già in atto (shadow AI).** Non è ipotetico: nella prassi molti docenti già usano chatbot consumer per correggere, eseguendo *questa stessa* funzione ad alto rischio senza base giuridica, tracciabilità né human-in-the-loop. Il prodotto non introduce il rischio: **porta sotto governance un rischio già presente e oggi assorbito dall'istituzione**. È il risvolto di compliance dell'argomento commerciale dello "scudo" ([`modelloBusiness.md`](./modelloBusiness.md) §5-ter).
+
 ---
 
 ## 3. Matrice: segmento × profilo di rischio

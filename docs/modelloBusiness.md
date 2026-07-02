@@ -64,6 +64,21 @@ Due argomenti di vendita che nascono dalla scelta multi-motore + on-prem, non da
 
 ---
 
+## 5-ter. Lo status quo è la shadow AI: si vende lo scudo, non l'AI
+
+Il concorrente non è la correzione manuale, è la **shadow AI**: molti docenti già incollano elaborati di studenti (spesso minori) in chatbot consumer. L'adozione dell'AI è quindi *già avvenuta*, ma ingovernata — e oggi è una **violazione viva** che l'istituzione (titolare del trattamento) assorbe alla cieca: niente base giuridica, trasferimento extra-UE, dati particolari negli elaborati, nessun human-in-the-loop né tracciabilità, il tutto sulla funzione ad alto rischio "valuto e assegno un voto" (dettaglio in [`legale.md`](./legale.md) §2 e §4).
+
+Questo riscrive il pitch: non *"adotta l'AI per correggere"* (l'hanno già, gratis), ma **"porta sotto controllo l'AI che già usi"**. Il valore pagato è lo **scudo**, non il motore — e copre due compratori con incentivi allineati:
+
+- **Docente** → da esposizione personale ("ho usato ChatGPT di nascosto") a strumento sanzionato, con override tracciato e voto difendibile.
+- **Scuola/ateneo** → da responsabilità da titolare in violazione a compliance-by-design.
+
+Il competitor reale è dunque *ChatGPT gratis* — ma ChatGPT gratis è una passività che l'istituzione già sostiene senza saperlo: è ciò che accorcia il "perché pagare".
+
+**La cautela che rende l'argomento difendibile.** Non *"ti rendiamo legale"* (l'alto rischio AI Act non si abolisce, [`legale.md`](./legale.md) §2), ma *"trasformiamo una violazione ingovernata in un processo governato, mitigato e difendibile"*. Lo scudo regge **solo perché** il prodotto è compliant a monte (inferenza UE/on-prem, base giuridica, DPIA, human-in-the-loop): è il *payoff* della macchina di governance, e la ragione per cui qui la compliance è una feature che si vende (§5), non un costo.
+
+---
+
 ## 6. Sintesi
 
 Si monetizza la certificabilità del motore, non la correzione. I crediti chiusi + due monete alleggeriscono IP/fisco e trattengono valore, con il quality score metrico come freno allo spam. Il go-to-market corre su due binari — docente singolo per l'innesco, istituzione per la ricorrenza — e la compliance EU-native è un argomento di vendita, non solo un adempimento.
