@@ -42,19 +42,20 @@ La documentazione è organizzata su **due livelli**.
 
 La cartella [`TTS/`](./TTS) contiene i **copioni narrati** dei documenti, riscritti in forma parlata per l'ascolto (input per Text-To-Speech). C'è un copione per la presentazione di Livello 1 ([`livello1-daAscoltare.txt`](./TTS/livello1-daAscoltare.txt), il racconto in nove punti, ~10 min) e uno per **ciascun documento di Livello 2** (`<doc>-daAscoltare.txt`). I copioni `.txt` sono versionati; gli eventuali file audio renderizzati (`.mp3`/`.wav`) no.
 
-**Allineamento copione ↔ sorgente.** Ogni copione è tracciato in [`TTS/manifest.json`](./TTS/manifest.json), che registra l'hash del documento sorgente al momento della stesura. Due comandi PowerShell:
+**Allineamento copione ↔ sorgente.** Ogni copione è tracciato in [`TTS/manifest.json`](./TTS/manifest.json), che registra l'hash del documento sorgente al momento della stesura.
 
 - **Stato** — quali copioni sono da aggiornare perché il sorgente è cambiato:
-  ```
-  powershell -ExecutionPolicy Bypass -File TTS\tts-status.ps1
-  ```
-- **Rigenerazione** — elenca i copioni da riscrivere; dopo che Claude Code li ha riscritti, `-Stamp` ri-sincronizza il manifest:
-  ```
-  powershell -ExecutionPolicy Bypass -File TTS\tts-regen.ps1
-  powershell -ExecutionPolicy Bypass -File TTS\tts-regen.ps1 -Stamp
-  ```
+  - da Claude Code: `/tts-status`
+  - da PowerShell: `powershell -ExecutionPolicy Bypass -File TTS\tts-status.ps1`
+- **Rigenerazione** — riscrive i copioni disallineati e ri-sincronizza il manifest:
+  - da Claude Code: `/tts-regen`
+  - da PowerShell: elenca i copioni da riscrivere; dopo che Claude Code li ha riscritti, `-Stamp` ri-sincronizza il manifest
+    ```
+    powershell -ExecutionPolicy Bypass -File TTS\tts-regen.ps1
+    powershell -ExecutionPolicy Bypass -File TTS\tts-regen.ps1 -Stamp
+    ```
 
-Il contenuto dei copioni è prosa scritta da Claude Code, non derivabile da uno script: `tts-regen.ps1` segnala cosa è disallineato e aggiorna il manifest, la riscrittura la fa Claude.
+Il contenuto dei copioni è prosa scritta da Claude Code, non derivabile da uno script: gli script/slash command segnalano cosa è disallineato e aggiornano il manifest, la riscrittura la fa Claude. Gli slash command sono la via preferita quando si lavora già dentro una sessione di Claude Code.
 
 ## Sviluppo
 
