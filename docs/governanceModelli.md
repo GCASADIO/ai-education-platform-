@@ -62,6 +62,8 @@ Ne segue una gerarchia chiara dei criteri:
 
 **Il gold standard.** Tutto ciò richiede un corpus di elaborati con doppia correzione esperta, che serve a stimare sia il riferimento umano (ripetibilità e inter-rater) sia l'allineamento del motore. È il collo di bottiglia del progetto, soprattutto per l'italiano dove i dataset pubblici scarseggiano: va messo a budget come asset, non come sottoprodotto.
 
+**Il profilo frontier come tetto pratico.** La strategia di sviluppo parte dai motori frontier (closed-source: Claude, GPT, Gemini) su **dataset sintetico** con voti di riferimento umani: il loro profilo tri-metrico contro quel riferimento diventa il **target di ammissione pratico** per il motore locale/UE destinato alla produzione — il locale è pronto quando avvicina il profilo frontier sullo stesso harness. Attenzione all'errore da non commettere: **l'output del frontier non è ground truth**. Un frontier ha auto-consistenza ~0.94–0.99 senza che questo lo renda accurato (alta affidabilità ⇏ validità): certificare il locale contro i *voti* del frontier ne clonerebbe i bias. Il riferimento resta il giudizio umano; il frontier fissa solo l'asticella. La migrazione frontier → locale è un caso del principio di §6: nuovo motore, ricertificazione completa. Sulla sequenza e sul vincolo legale che impone la migrazione prima dei dati reali, vedi il gate di migrazione in [`roadmap.md`](./roadmap.md).
+
 ---
 
 ## 5. Architettura a livelli

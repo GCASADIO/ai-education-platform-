@@ -81,7 +81,7 @@ Principio trasversale: **tenere la diagnosi fuori dall'AI finché possibile** �
 
 Sono **due funzioni distinte, a due risoluzioni**, da non confondere.
 
-- **Demo (walkthrough)** — una persona entra come docente (crea compito e griglia), poi come studente (svolge e riceve la restituzione). Gira su **dati sintetici**, con role-switching su un solo utente che *simula* il flusso multi-ruolo (in produzione sono persone diverse). Scopo: capire e fidarsi. Compliance quasi nulla → tra le prime da costruire.
+- **Demo (walkthrough)** — una persona entra come docente (crea compito e griglia), poi come studente (svolge e riceve la restituzione). Gira su **dati sintetici**, con role-switching su un solo utente che *simula* il flusso multi-ruolo (in produzione sono persone diverse). Scopo: capire e fidarsi. Compliance quasi nulla → tra le prime da costruire. È anche l'**ambiente di sviluppo della fase frontier**: sugli stessi dati sintetici i motori extra-UE girano senza vincoli GDPR, fino al gate di migrazione (vedi [`roadmap.md`](./roadmap.md) §4).
 - **Validazione di allineamento** — il docente carica elaborati di riferimento col voto atteso e vede lo scarto rispetto al voto del motore; serve a rivalidare **al variare della versione** del motore, perché non c'è miglioramento monotòno tra generazioni. È la faccia in-prodotto del framework di `governanceModelli.md`.
 
 **La distinzione che conta — compito singolo vs set:**

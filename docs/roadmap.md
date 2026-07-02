@@ -49,6 +49,10 @@ Corollario: le funzioni differenzianti (multi-motore, on-prem, adattività, mark
 
 La **Fase 0 è il collo di bottiglia** e va davanti a tutto: sblocca il resto.
 
+**Gate di migrazione (ingresso in Fase 1).** Il confine di compliance non è dev/prod ma **dati sintetici / dati reali**. Fase 0 e modalità demo girano su dati sintetici: nessun dato personale, quindi i motori frontier extra-UE sono usabili senza vincoli GDPR (vedi `legale.md` §4). Prima che il **primo elaborato reale** entri nel sistema, l'inferenza deve essere su motore locale/UE certificato sullo stesso harness — con il profilo frontier come target di ammissione (vedi `governanceModelli.md` §4) — oppure coperta da DPA e valutazione di trasferimento. È una condizione d'ingresso alla Fase 1, non un adempimento a valle.
+
+**Due filoni paralleli e indipendenti.** L'harness di Fase 0 (script di benchmark, nessuna interfaccia) e la piattaforma (upload, editor rubriche, vista di revisione con override, versioning, demo) procedono in parallelo: la demo su dati sintetici non richiede un motore certificato per essere costruita, e l'harness non richiede l'interfaccia. Il grosso dell'effort sta sulla piattaforma; l'harness è la parte piccola ma bloccante per il pilot.
+
 ---
 
 ## 5. Dettaglio Fase 0 — costruzione del gold standard
@@ -56,6 +60,8 @@ La **Fase 0 è il collo di bottiglia** e va davanti a tutto: sblocca il resto.
 Il gold standard è l'asset più costoso e il prerequisito di ogni claim di validità (vedi `governanceModelli.md` §4). Va messo a budget come asset, non come sottoprodotto — soprattutto per l'italiano, dove i dataset pubblici scarseggiano.
 
 **Cosa serve.** Un corpus di prove reali corrette da valutatori esperti, idealmente in **doppia correzione**, così sullo stesso materiale si stimano *sia* la ripetibilità umana di riferimento *sia* l'allineamento dell'AI. Su questo corpus si gira il confronto cross-family (QWK e ICC per l'accordo, SMD per il bias di severità).
+
+**Strategia di sviluppo: frontier su sintetico, locale come traguardo.** In Fase 0 il benchmark cross-family si fa con i motori frontier su un **dataset sintetico** con voti di riferimento assegnati da valutatore umano: si misura quanto rende il meglio disponibile, e quel profilo diventa l'asticella per il motore locale/UE (dettaglio e caveat — il frontier non è ground truth — in `governanceModelli.md` §4). Così i costi iniziali restano bassi e la migrazione al locale ha un criterio di successo misurabile invece che un giudizio a occhio.
 
 **Punto di partenza sui dati.** Dataset pubblici esistono soprattutto per l'inglese — **ASAP/ASAP++** (Hewlett, su Kaggle) è il riferimento per l'Automated Essay Scoring con punteggi per tratto. Per l'italiano la disponibilità è scarsa: con ogni probabilità va costruito il corpus, ed è il collo di bottiglia da mettere in conto subito.
 
