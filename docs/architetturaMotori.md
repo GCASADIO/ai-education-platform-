@@ -11,9 +11,21 @@
 Sono due pattern che lavorano insieme con ruoli diversi, e il primo è quello che regge l'intera idea "demo = motore finto":
 
 - **Strategy** — un'unica interfaccia `GradingEngine.grade(elaborato, griglia) → Risultato` e tante implementazioni intercambiabili usate in modo polimorfico (OpenAI, Claude, open-source on-prem, e il `FakeEngine` della demo). Il resto del sistema non sa né gli importa quale strategia stia girando.
-- **Factory** — il complemento che *istanzia/seleziona* la strategia giusta a partire dalla configurazione (il motore scelto dal tenant, o il flag demo). Basta una Factory Method / Factory parametrica: `EngineFactory.create(config) → GradingEngine`.
+- **Factory** — il complemento che *istanzia/seleziona* la strategia giusta a partire dalla configurazione (il motore scelto dal tenant, il flag demo, o l'iterazione del benchmark su più motori). Basta una Factory Method / Factory parametrica: `EngineFactory.create(config) → GradingEngine`.
 
 La demo non richiede infrastruttura nuova: il `FakeEngine` è semplicemente un'implementazione in più dietro la stessa interfaccia che già serve per il multi-motore.
+
+---
+
+## 1-bis. Registry multi-motore da subito, catalogo certificato dopo: tre livelli distinti
+
+"Il multi-motore arriva alla Fase 3" vale per la **feature di prodotto**, non per il **meccanismo**. Vanno tenuti separati tre livelli con scadenze diverse, per non sotto-dimensionare la Factory a "un fake + un placeholder":
+
+1. **Meccanismo multi-motore (registry) — subito.** La Factory tiene un *insieme* di N implementazioni dietro la stessa interfaccia e ne istanzia/itera una. Lo pretende la demo (il `FakeEngine`) *e*, soprattutto, il benchmark cross-family di Fase 0, che per definizione fa girare **più motori sullo stesso corpus** per confrontarli (vedi [`roadmap.md`](./roadmap.md) §4–5). Non si "provano i motori" senza istanziarne parecchi in modo intercambiabile.
+2. **Motori frontier non certificati su dati sintetici — Fase 0.** Nel registry ci girano i motori frontier per la misura (ICC, QWK, SMD), non ancora certificati. È lecito perché il confine di compliance è *dati sintetici vs dati reali*, non il numero di motori: su sintetico i motori extra-UE si usano liberamente (gate di migrazione in [`roadmap.md`](./roadmap.md) §4).
+3. **Catalogo certificato + scelta del motore come value prop — Fase 3.** Set di motori certificati, profilo pubblicato, selezione da parte del tenant. È qui che il multi-motore diventa *feature*, e resta tardi di proposito perché a basso rischio.
+
+La regola operativa: la Factory nasce già capace di reggere più motori (livello 1); ciò che si aggiunge dopo è la *certificazione* e la *superficie di prodotto* (livelli 2–3), non il meccanismo.
 
 ---
 
