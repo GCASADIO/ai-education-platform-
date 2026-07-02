@@ -5,68 +5,67 @@
                      "sorgente":  "docs/presentazione.md",
                      "copione":  "TTS/livello1-daAscoltare.txt",
                      "sourceSha256":  "715FCCCC457BDBB0A821F75D17DEA968C8B4F3A1A89CABAFCB0A70DBC3C3A8BF",
-                     "generatoIl":  "2026-07-02T06:25:04Z"
+                     "generatoIl":  "2026-07-02T14:26:48Z"
                  },
                  {
                      "sorgente":  "docs/visione.md",
                      "copione":  "TTS/visione-daAscoltare.txt",
                      "sourceSha256":  "E342F360DBA196C4AB9836331E1BDEA9F12E03831F1AD60D60864C35772DAF9B",
-                     "generatoIl":  "2026-07-02T06:25:04Z"
+                     "generatoIl":  "2026-07-02T14:26:48Z"
                  },
                  {
                      "sorgente":  "docs/analisiBisogniEMercato.md",
                      "copione":  "TTS/analisiBisogniEMercato-daAscoltare.txt",
                      "sourceSha256":  "2890C801CD54979340B165EA2986D6DBD59EB86782BC4B26D1AF097D795EC19F",
-                     "generatoIl":  "2026-07-01T19:39:19Z"
+                     "generatoIl":  "2026-07-02T14:26:48Z"
                  },
                  {
                      "sorgente":  "docs/statoDellArte.md",
                      "copione":  "TTS/statoDellArte-daAscoltare.txt",
                      "sourceSha256":  "CB0860B8579E55D4AAF5E73716172095B7E0C17315B65AD6FD236C5F3D90EB53",
-                     "generatoIl":  "2026-07-01T19:39:19Z"
+                     "generatoIl":  "2026-07-02T14:26:48Z"
                  },
                  {
                      "sorgente":  "docs/governanceModelli.md",
                      "copione":  "TTS/governanceModelli-daAscoltare.txt",
-                     "sourceSha256":  "3199048282903D06C7020A2C601769B1262056288B847AA1D5DD5E5E0C7CA4EC",
-                     "generatoIl":  "2026-07-01T19:39:19Z"
+                     "sourceSha256":  "634BCC55507175A307107FDFF46637E6777B3F3690A8969A46D3F41C031CF017",
+                     "generatoIl":  "2026-07-02T14:26:48Z"
                  },
                  {
                      "sorgente":  "docs/legale.md",
                      "copione":  "TTS/legale-daAscoltare.txt",
-                     "sourceSha256":  "499E8A629EABAB894A16B1E2B538A8F0825BD8C7F00AA53129FF97F173FEC8A4",
-                     "generatoIl":  "2026-07-01T19:39:19Z"
+                     "sourceSha256":  "812B59EF3C92E072B57B397DB8FF9A6846389CC0BFC4E84BC240A95B884DBD26",
+                     "generatoIl":  "2026-07-02T14:26:48Z"
                  },
                  {
                      "sorgente":  "docs/architetturaMotori.md",
                      "copione":  "TTS/architetturaMotori-daAscoltare.txt",
-                     "sourceSha256":  "2A3232BB779F27F1ADE0E6C9F4B41787A8E6E9968419DCB93686719C9A4D63C7",
-                     "generatoIl":  "2026-07-01T19:39:19Z"
+                     "sourceSha256":  "C94F3E1217D56F97FF187EC86034367D9B560DFFC40A82E76A82A8D5CAFABC43",
+                     "generatoIl":  "2026-07-02T14:26:48Z"
                  },
                  {
                      "sorgente":  "docs/ruoliEPermessi.md",
                      "copione":  "TTS/ruoliEPermessi-daAscoltare.txt",
                      "sourceSha256":  "C6638E85027A0B3047F6C902CFD3A34AD24F34C0B535E2973E93AA4E79A7BD5F",
-                     "generatoIl":  "2026-07-01T19:39:19Z"
+                     "generatoIl":  "2026-07-02T14:26:48Z"
                  },
                  {
                      "sorgente":  "docs/roadmap.md",
                      "copione":  "TTS/roadmap-daAscoltare.txt",
-                     "sourceSha256":  "727DB2DD98BB097568163902F5868C49ACCDB796875CBE2C9ACC679F29A66B0D",
-                     "generatoIl":  "2026-07-02T06:25:04Z"
+                     "sourceSha256":  "6AAF2426B2FC23FDAD7917BC342061239DCFCF629E12DBFE867AF2A74223D8EF",
+                     "generatoIl":  "2026-07-02T14:26:48Z"
                  },
                  {
                      "sorgente":  "docs/backlogPrioritizzato.md",
                      "copione":  "TTS/backlogPrioritizzato-daAscoltare.txt",
-                     "sourceSha256":  "FEAEA4EDBA0177708E0C42B6514A0D1735BB840297AB39DCB5A7D03CD0487297",
-                     "generatoIl":  "2026-07-01T19:39:19Z"
+                     "sourceSha256":  "1B0D2BA78386F88C65039C02D4E543EBB8DC287325708A422D304DDF6BCEC701",
+                     "generatoIl":  "2026-07-02T14:26:48Z"
                  },
                  {
                      "sorgente":  "docs/modelloBusiness.md",
                      "copione":  "TTS/modelloBusiness-daAscoltare.txt",
-                     "sourceSha256":  "8173FC2031CD320269960B97CBFD17B55008C1B04E7A8FCA7BF5919E157952BE",
-                     "generatoIl":  "2026-07-01T19:39:19Z"
+                     "sourceSha256":  "DB9981A40842ACA6D123C623750FA39CE9C82B8FC7713AB2A4C0827454B3EF3A",
+                     "generatoIl":  "2026-07-02T14:26:48Z"
                  }
              ]
 }
-
