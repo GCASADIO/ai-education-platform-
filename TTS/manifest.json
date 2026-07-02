@@ -4,14 +4,14 @@
                  {
                      "sorgente":  "docs/presentazione.md",
                      "copione":  "TTS/livello1-daAscoltare.txt",
-                     "sourceSha256":  "35BE60676B00F4548F999D4B17DBAE25ABBA26A7F34B27C40D279EDC4369B3B1",
-                     "generatoIl":  "2026-07-01T19:39:19Z"
+                     "sourceSha256":  "715FCCCC457BDBB0A821F75D17DEA968C8B4F3A1A89CABAFCB0A70DBC3C3A8BF",
+                     "generatoIl":  "2026-07-02T06:25:04Z"
                  },
                  {
                      "sorgente":  "docs/visione.md",
                      "copione":  "TTS/visione-daAscoltare.txt",
-                     "sourceSha256":  "B7A8BCA2759094DE74AA38E0A5FCD5F12CF2ACF1EADD72289EB969F1E75C120D",
-                     "generatoIl":  "2026-07-01T19:39:19Z"
+                     "sourceSha256":  "E342F360DBA196C4AB9836331E1BDEA9F12E03831F1AD60D60864C35772DAF9B",
+                     "generatoIl":  "2026-07-02T06:25:04Z"
                  },
                  {
                      "sorgente":  "docs/analisiBisogniEMercato.md",
@@ -52,8 +52,8 @@
                  {
                      "sorgente":  "docs/roadmap.md",
                      "copione":  "TTS/roadmap-daAscoltare.txt",
-                     "sourceSha256":  "B638620F9B7874FF260086F783396E2B4061BE4D805848B070A55614B24B7C5F",
-                     "generatoIl":  "2026-07-01T19:39:19Z"
+                     "sourceSha256":  "727DB2DD98BB097568163902F5868C49ACCDB796875CBE2C9ACC679F29A66B0D",
+                     "generatoIl":  "2026-07-02T06:25:04Z"
                  },
                  {
                      "sorgente":  "docs/backlogPrioritizzato.md",
@@ -69,3 +69,4 @@
                  }
              ]
 }
+

@@ -65,17 +65,11 @@ Il moat è la cerniera tra strati oggi non occupata:
 
 Non si certifica "l'app corregge bene" in astratto. Si certifica **"il motore X, con questa rubrica, corregge con questo profilo"**. La qualità è proprietà della coppia (motore, configurazione).
 
-Ogni motore è profilato su **tre assi indipendenti**, perché nessuno da solo basta:
+Ogni motore è profilato su **tre assi indipendenti**, perché nessuno da solo basta: **ripetibilità** e **allineamento all'umano** (validità) come criteri di *ammissione*, **bias di severità** come *parametro di calibrazione* — non di esclusione.
 
-| Asse | Cosa misura | Ruolo |
-|---|---|---|
-| **Ripetibilità** | quanto il motore ripete lo stesso voto sullo stesso elaborato | Criterio di **ammissione** |
-| **Allineamento all'umano** (validità) | quanto il voto concorda col giudizio umano di riferimento | Criterio di **ammissione** |
-| **Bias di severità** | quanto il motore è mediamente più severo o più indulgente | **Parametro di calibrazione**, non di esclusione |
+Il principio che orienta tutto: **il bias è correggibile, la varianza no.** Un motore mediamente severo si ricalibra applicando una correzione fissa; un motore poco ripetibile o poco valido non si recupera. E per la seconda asimmetria del §3, la certificazione **non è un atto una tantum**: ogni aggiornamento la riapre, e la frequenza con cui il docente corregge a mano il voto proposto è il rilevatore precoce di deriva.
 
-Il principio che orienta tutto: **il bias è correggibile, la varianza no.** Un motore mediamente severo si ricalibra applicando una correzione fissa; un motore poco ripetibile o poco valido non si recupera. Vale anche per l'allineamento al singolo docente: **allineare la severità media è un offset; allineare il giudizio caso-per-caso è un'altra cosa, e costa una ricertificazione** (il confine passa tra ciò che si fa in inferenza e ciò che tocca i pesi del modello). E poiché non c'è miglioramento garantito tra versioni, la certificazione **non è un atto una tantum**: ogni aggiornamento la riapre, e la frequenza con cui il docente corregge a mano il voto proposto è il rilevatore precoce di deriva.
-
-*Le metriche psicometriche precise che misurano i tre assi sono definite nel dossier collegato.*
+*Le metriche precise dei tre assi, le soglie e le leve per allineare il motore al singolo docente (cosa si fa con un offset, cosa costa una ricertificazione) sono nel dossier collegato.*
 
 Il prerequisito costoso di tutto questo è il **gold standard** (corpus a doppia correzione esperta): il collo di bottiglia del progetto, soprattutto per l'italiano.
 
@@ -107,16 +101,7 @@ Il peso regolatorio **non dipende dall'età degli studenti** ma dalla funzione "
 
 Il metodo evita la trappola a cascata con **tre artefatti** (visione a una pagina, roadmap di release, scheda della release corrente), **fette verticali** end-to-end e **ipotesi falsificabili** invece di elenchi di funzioni. Si ordina per **rischio decrescente**: prima le incognite maggiori — *il motore valuta abbastanza bene?* (validità) e *il docente adotta?* (override rate).
 
-| Fase | Contenuto | Criterio |
-|---|---|---|
-| **0** | Gold standard + harness (collo di bottiglia) | Profilo tri-metrico stabile su un motore |
-| **1** | Walking skeleton: loop minimo, un motore, un segmento | Override rate e tempo risparmiato |
-| **2** | Workflow e difendibilità (rubrica, feedback, tracciabilità) | Adozione nel pilot |
-| **3** | Multi-motore | ≥2 motori certificati intercambiabili |
-| **4** | On-prem / bring-your-own | Deployment locale + ruoli AI Act mappati |
-| **5** | Scala (segmenti, lingue, ciclo studente) | Espansione |
-
-I differenzianti costosi (multi-motore, on-prem, adattività, marketplace ricco) arrivano **tardi di proposito**: sono a basso rischio una volta dimostrati loop e validità.
+Sei fasi: si parte dal **gold standard con l'harness di certificazione** (Fase 0, il collo di bottiglia), poi il walking skeleton del loop minimo, il workflow difendibile, e solo dopo multi-motore, on-prem e scala. I differenzianti costosi (multi-motore, on-prem, adattività, marketplace ricco) arrivano **tardi di proposito**: sono a basso rischio una volta dimostrati loop e validità. La tabella completa delle fasi, con contenuti e criteri di uscita, è nella roadmap.
 
 **→ Approfondisci:** [`roadmap.md`](./roadmap.md) · [`backlogPrioritizzato.md`](./backlogPrioritizzato.md)
 
@@ -132,6 +117,4 @@ Go-to-market su due binari: **docente singolo** (adozione facile, innesco mono-u
 
 ---
 
-## Stato
-
-🚧 Fase di sviluppo iniziale. Idea a paternità **non esclusiva**: il concetto è condiviso, non rivendicato in esclusiva.
+*Stato del progetto e nota di paternità: vedi [`README.md`](../README.md).*

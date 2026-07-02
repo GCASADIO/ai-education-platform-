@@ -22,7 +22,7 @@ Scrivere subito lo spec dettagliato dell'app completa è la trappola a cascata: 
 | **Roadmap di release** | La sequenza di traguardi, ciascuno con obiettivo, ambito e criterio di successo. Il prossimo dettagliato, i successivi grossolani. | Aggiornata a ogni fase |
 | **Scheda di release** | Cosa l'utente potrà fare dopo *questa* release, cosa è esplicitamente fuori ambito, la metrica di successo, le dipendenze. | Solo per la release corrente |
 
-Il **loop fondamentale** della visione: *il docente carica elaborati → un motore certificato propone voto e feedback → il docente rivede e sovrascrive → esporta*.
+La visione — con il loop fondamentale che ancora tutte le fasi — è fissata in [`visione.md`](./visione.md).
 
 ---
 
