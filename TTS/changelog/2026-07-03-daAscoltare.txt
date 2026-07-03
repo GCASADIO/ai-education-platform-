@@ -1,0 +1,7 @@
+Changelog della rigenerazione TTS del tre luglio duemilaventisei. Il racconto.
+
+Questo è il resoconto parlato di cosa è stato riallineato in questa sessione di rigenerazione dei copioni.
+
+Stato dell'arte ed evidenze. Nel documento sorgente sono stati rimossi due riferimenti accademici che si erano rivelati non verificati o non pertinenti, gli identificativi arXiv duemilacinquecentodieci punto diciannovemilatrentadue e duemilacinquecentotre punto cinquemilasettecentotrentasette, ed è stato corretto il titolo citato del paper RULERS, ora reso come "From Rubrics to Reliable Scores: Evidence-Grounded Text Evaluation with LLM Judges" invece della dicitura precedente. Il copione narrato non elencava i singoli identificativi arXiv della parte finale sui riferimenti accademici, quindi il contenuto discorsivo resta sostanzialmente invariato: è stata solo affinata l'ultima frase di chiusura, per dire che l'elenco dei riferimenti è ormai ridotto ai soli identificativi verificati o pertinenti, e resta comunque da controllare contro le fonti primarie.
+
+In sintesi, in questa sessione è stato riallineato un solo copione, quello di stato dell'arte ed evidenze, per rispecchiare la pulizia dei riferimenti accademici fatta nel documento sorgente.

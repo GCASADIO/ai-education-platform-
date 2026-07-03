@@ -22,8 +22,8 @@
                  {
                      "sorgente":  "docs/statoDellArte.md",
                      "copione":  "TTS/statoDellArte-daAscoltare.txt",
-                     "sourceSha256":  "CB0860B8579E55D4AAF5E73716172095B7E0C17315B65AD6FD236C5F3D90EB53",
-                     "generatoIl":  "2026-07-02T14:26:48Z"
+                     "sourceSha256":  "878B58FADB92A1276DBDDA8018D1C411FB087D6B5F666C001395359AE7EE95F4",
+                     "generatoIl":  "2026-07-03T09:25:31Z"
                  },
                  {
                      "sorgente":  "docs/governanceModelli.md",
