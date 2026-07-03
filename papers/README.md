@@ -12,8 +12,8 @@ Raccolta dei paper citati in `CLAUDE.md` e `docs/statoDellArte.md` (letteratura 
 
 | # | Paper | ID / DOI | PDF | Scheda | Rilevanza |
 |---|---|---|---|---|---|
-| 1 | **RULERS** — From Rubrics to Reliable Scores | [2601.08654](https://arxiv.org/abs/2601.08654) | [pdf](./2601.08654.pdf) | [scheda](./RULERS-2601.08654.md) | Rubriche eseguibili/versionate |
-| 2 | **GradeAgentOps** — Verification-First LLM Exam Grading | [10.3390/ai7060198](https://doi.org/10.3390/ai7060198) | ⚠️ manuale | [scheda](./GradeAgentOps-ai7060198.md) | Certificazione psicometrica per motore (ICC/QWK) |
+| 1 | **RULERS** — From Rubrics to Reliable Scores | [2601.08654](https://arxiv.org/abs/2601.08654) | [pdf](./2601.08654.pdf) | [scheda](./2601.08654-RULERS.md) | Rubriche eseguibili/versionate |
+| 2 | **GradeAgentOps** — Verification-First LLM Exam Grading | [10.3390/ai7060198](https://doi.org/10.3390/ai7060198) | ⚠️ manuale | [scheda](./ai7060198-GradeAgentOps.md) | Certificazione psicometrica per motore (ICC/QWK) |
 | 3 | Model Size, Temperature, Prompt Style vs allineamento | [2509.19329](https://arxiv.org/abs/2509.19329) | [pdf](./2509.19329.pdf) | [scheda](./2509.19329-model-size-temp-prompt.md) | ICC multi-livello; reliability ≠ validità |
 | 4 | Grading Scale Impact (0–5 è la migliore) | [2601.03444](https://arxiv.org/abs/2601.03444) | [pdf](./2601.03444.pdf) | [scheda](./2601.03444-grading-scale.md) | Scala di voto come fattore di certificazione |
 | 5 | LLM Performance Certification via CMLE | [2604.03257](https://arxiv.org/abs/2604.03257) | [pdf](./2604.03257.pdf) | [scheda](./2604.03257-cmle-certification.md) | Certificazione failure-rate con poche etichette umane |
