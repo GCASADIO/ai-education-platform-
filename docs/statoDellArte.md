@@ -74,13 +74,11 @@ La correzione HITL e l'allenamento studente sono terreno affollato: **non** sono
 
 Elenco degli identificativi emersi nelle ricerche. **Da verificare** (alcuni sono futuri rispetto al momento della ricognizione).
 
-- **RULERS** — arXiv 2601.08654 *(✓ identificativo verificato su arXiv, luglio 2026: "Locked Rubrics and Evidence-Anchored Scoring for Robust LLM Evaluation", codice: github.com/LabRAI/Rulers)*
+- **RULERS** — arXiv 2601.08654 *(✓ identificativo verificato su arXiv, luglio 2026: "From Rubrics to Reliable Scores: Evidence-Grounded Text Evaluation with LLM Judges", codice: github.com/LabRAI/Rulers)*
 - **GradeAgentOps** — doi.org/10.3390/ai7060198
 - arXiv 2509.19329 — test–retest ICC tra modelli/temperature/prompt (ICC inter-modello 0.77–0.91 large vs 0.60–0.81 small)
-- arXiv 2510.19032 — ICC + bias come differenza media segnata normalizzata
 - arXiv 2601.03444 — impatto della scala di voto sull'allineamento
 - arXiv 2604.03257 — certificazione statistica delle performance LLM via CMLE
-- arXiv 2503.05737 — analisi classificazione alto rischio (valutazione studenti)
 - GUIDE — arXiv 2603.00465
 - CARO — arXiv 2603.00451
 - LLM-AES (dual-process, LLaMA3) — github.com/Xiaochr/LLM-AES (LAK25)

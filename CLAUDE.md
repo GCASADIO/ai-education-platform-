@@ -44,7 +44,6 @@ Claude Code deve consultare questi file prima di proporre modifiche architettura
 - RULERS (arXiv 2601.08654) — *identificativo verificato su arXiv (luglio 2026)*
 - GradeAgentOps
 - arXiv 2509.19329
-- arXiv 2510.19032
 
 ## Come lavorare con GC
 
