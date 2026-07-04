@@ -47,13 +47,14 @@ Claude Code deve consultare questi file prima di proporre modifiche architettura
 
 ### Gestione operativa del submodule (GC non usa i submodule)
 
-GC non conosce e non deve gestire i submodule: quando GC modifica qualcosa sotto `Commerciale/`, **Claude Code gestisce l'intero flusso a due repo per lui**, trattandoli come se fossero un repo unico e tenendo i commit **allineati**. Regola pratica ad ogni modifica dentro `Commerciale/`:
+GC non conosce e non deve gestire i submodule, e ragiona come se il progetto fosse **un unico repo**. **Trigger: quando GC chiede di committare** (non ad ogni singola modifica), Claude Code deve:
 
-1. **Commit + push nel repo privato** (dentro `Commerciale/`): `git -C Commerciale add -A && git -C Commerciale commit -m "…" && git -C Commerciale push`. Il push verso il repo privato è verso l'esterno → chiedere conferma a GC prima.
-2. **Aggiorna il puntatore nel repo pubblico**: dal repo padre `git add Commerciale && git commit -m "Aggiorna puntatore Commerciale"`, poi `git push` (chiedere conferma).
-3. **Non lasciare mai i due repo disallineati**: se il puntatore del padre non riflette l'ultimo commit del privato, `git status` nel padre segnala `Commerciale` come modificato — vanno sempre committati insieme, nella stessa sessione.
-
-Claude Code deve **eseguire questi passaggi al posto di GC** e riepilogargli in linguaggio semplice cosa è stato committato/pushato dove, senza pretendere che conosca la meccanica dei submodule.
+1. **Ispezionare sia il repo principale sia il submodule `Commerciale/`**: `git status` nel padre **e** `git -C Commerciale status`, per capire cosa è cambiato in entrambi.
+2. **Committare/pushare quel che serve in entrambi, mantenendo i puntatori allineati**, come se fosse un repo unico:
+   - se ci sono modifiche dentro `Commerciale/`: `git -C Commerciale add -A && git -C Commerciale commit -m "…" && git -C Commerciale push` (push verso il repo privato = azione esterna → chiedere conferma a GC prima);
+   - poi aggiornare il puntatore nel repo pubblico: dal padre `git add Commerciale && git commit -m "…"` e `git push` (chiedere conferma);
+   - non lasciare **mai** i due repo disallineati: se il puntatore del padre non riflette l'ultimo commit del privato, `git status` nel padre segnala `Commerciale` come modificato — vanno committati insieme, nella stessa sessione.
+3. **Segnalare a GC ogni divergenza dal comportamento «repo unico»**: se per soddisfare la richiesta serve qualcosa che in un repo unificato non servirebbe (doppio commit, push separato sul repo privato, un puntatore da riallineare), **dirglielo esplicitamente prima di procedere**, in linguaggio semplice e senza pretendere che conosca la meccanica dei submodule.
 
 ## Riferimenti accademici (letteratura 2023–2026 su AI grading reliability)
 
