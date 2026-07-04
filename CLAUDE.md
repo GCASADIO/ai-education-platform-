@@ -39,6 +39,11 @@ Non è "solo un correttore automatico": la differenziazione reale è la combinaz
 
 Claude Code deve consultare questi file prima di proporre modifiche architetturali o di prodotto che li riguardano, e mantenerli aggiornati se una decisione presa in sessione li rende obsoleti.
 
+## Cartella `Commerciale/` (riservata)
+
+- Esiste una cartella `Commerciale/` nel repository locale, esclusa dal versionamento (in `.gitignore`, non su GitHub).
+- Se ne può menzionare **solo l'esistenza**. **Nessun elemento, contenuto o dato presente al suo interno** può essere citato, riportato o riutilizzato negli altri file del progetto **senza esplicita approvazione di GC** — anche quando l'operazione avverrebbe in automatico.
+
 ## Riferimenti accademici (letteratura 2023–2026 su AI grading reliability)
 
 - RULERS (arXiv 2601.08654) — *identificativo verificato su arXiv (luglio 2026)*
