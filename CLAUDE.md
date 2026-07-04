@@ -43,6 +43,7 @@ Claude Code deve consultare questi file prima di proporre modifiche architettura
 
 - Esiste una cartella `Commerciale/` nel repository locale, esclusa dal versionamento (in `.gitignore`, non su GitHub).
 - Se ne può menzionare **solo l'esistenza**. **Nessun elemento, contenuto o dato presente al suo interno** può essere citato, riportato o riutilizzato negli altri file del progetto **senza esplicita approvazione di GC** — anche quando l'operazione avverrebbe in automatico.
+- In `Commerciale/` vivono anche uno o più **registri di «idee da integrare»** (file `IdeeDaIntegrare_<data>.md`): raccolgono idee nuove — di GC e del team — in attesa di essere **migrate nei `docs/`** in un secondo momento. La migrazione di ogni voce verso `docs/` richiede l'**esplicita approvazione di GC**, voce per voce (vale la regola di riservatezza sopra).
 
 ## Riferimenti accademici (letteratura 2023–2026 su AI grading reliability)
 
