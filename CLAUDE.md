@@ -45,6 +45,16 @@ Claude Code deve consultare questi file prima di proporre modifiche architettura
 - Se ne può menzionare **solo l'esistenza**. **Nessun elemento, contenuto o dato presente al suo interno** può essere citato, riportato o riutilizzato negli altri file del progetto **senza esplicita approvazione di GC** — anche quando l'operazione avverrebbe in automatico.
 - In `Commerciale/` vivono anche uno o più **registri di «idee da integrare»** (file `IdeeDaIntegrare_<data>.md`): raccolgono idee nuove — di GC e del team — in attesa di essere **migrate nei `docs/`** in un secondo momento. La migrazione di ogni voce verso `docs/` richiede l'**esplicita approvazione di GC**, voce per voce (vale la regola di riservatezza sopra).
 
+### Gestione operativa del submodule (GC non usa i submodule)
+
+GC non conosce e non deve gestire i submodule: quando GC modifica qualcosa sotto `Commerciale/`, **Claude Code gestisce l'intero flusso a due repo per lui**, trattandoli come se fossero un repo unico e tenendo i commit **allineati**. Regola pratica ad ogni modifica dentro `Commerciale/`:
+
+1. **Commit + push nel repo privato** (dentro `Commerciale/`): `git -C Commerciale add -A && git -C Commerciale commit -m "…" && git -C Commerciale push`. Il push verso il repo privato è verso l'esterno → chiedere conferma a GC prima.
+2. **Aggiorna il puntatore nel repo pubblico**: dal repo padre `git add Commerciale && git commit -m "Aggiorna puntatore Commerciale"`, poi `git push` (chiedere conferma).
+3. **Non lasciare mai i due repo disallineati**: se il puntatore del padre non riflette l'ultimo commit del privato, `git status` nel padre segnala `Commerciale` come modificato — vanno sempre committati insieme, nella stessa sessione.
+
+Claude Code deve **eseguire questi passaggi al posto di GC** e riepilogargli in linguaggio semplice cosa è stato committato/pushato dove, senza pretendere che conosca la meccanica dei submodule.
+
 ## Riferimenti accademici (letteratura 2023–2026 su AI grading reliability)
 
 - RULERS (arXiv 2601.08654) — *identificativo verificato su arXiv (luglio 2026)*
