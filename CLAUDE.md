@@ -41,7 +41,7 @@ Claude Code deve consultare questi file prima di proporre modifiche architettura
 
 ## Cartella `Commerciale/` (riservata)
 
-- Esiste una cartella `Commerciale/` nel repository locale, esclusa dal versionamento (in `.gitignore`, non su GitHub).
+- La cartella `Commerciale/` è un **git submodule** che punta a un repository privato separato (`GCASADIO/ai-education-platform-Commerciale`). Il repo pubblico registra solo il puntatore in `.gitmodules`; **i contenuti vivono nel repo privato** e non compaiono nel pubblico. Chi clona senza accesso al privato vede la cartella vuota (per popolarla: `git submodule update --init`).
 - Se ne può menzionare **solo l'esistenza**. **Nessun elemento, contenuto o dato presente al suo interno** può essere citato, riportato o riutilizzato negli altri file del progetto **senza esplicita approvazione di GC** — anche quando l'operazione avverrebbe in automatico.
 - In `Commerciale/` vivono anche uno o più **registri di «idee da integrare»** (file `IdeeDaIntegrare_<data>.md`): raccolgono idee nuove — di GC e del team — in attesa di essere **migrate nei `docs/`** in un secondo momento. La migrazione di ogni voce verso `docs/` richiede l'**esplicita approvazione di GC**, voce per voce (vale la regola di riservatezza sopra).
 

@@ -40,9 +40,6 @@ build/
 # Materiali di lavoro temporanei (chat sorgente, note di porting)
 temp/
 
-# Materiale commerciale (non versionato)
-Commerciale/
-
 # TTS: i copioni narrati (TTS/*.txt) SONO versionati.
 # Gli eventuali file audio renderizzati non lo sono.
 TTS/*.mp3
